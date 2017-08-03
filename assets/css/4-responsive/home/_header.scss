@@ -1,0 +1,134 @@
+@media (max-width: $screen-md-max) and (min-width: $screen-md-min){
+  .header-navbar {
+    &-left {
+      height: 60px;
+
+      a {
+        padding: 9px !important;
+        line-height: 40px !important;
+      }
+    }
+
+    &-brand {
+      .logo {
+        top: 0;
+      }
+
+      .small-logo {
+        left: 36px;
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-sm-min + 4) {
+  .header-navbar {
+    &-left {
+      margin: 0;
+
+      li {
+        display: inline-table;
+        position: relative;
+      }
+
+      a {
+        color: $accent-color;
+        font-weight: 600;
+        font-size: 14px;
+        padding: 10px;
+        line-height: 50px;
+        display: block;
+      }
+
+      li:hover .header-navbar-left-sub {
+        animation: menu 0.8s ease-in-out forwards;
+      }
+    }
+
+    &-left-sub {
+      border-top: 1px solid $accent-color;
+      border-bottom: 2px solid $accent-color;
+      opacity: 0;
+      min-width: 200px;
+      background: $white-color;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      transform-origin: top;
+      z-index: 2;
+
+      @keyframes menu {
+        0% {
+          opacity: 0;
+          transform: rotateX(-45deg);
+        }
+        100% {
+          opacity: 1;
+          transform: rotateX(0deg) translateY(-1px);
+        }
+      }
+
+      li {
+        border-bottom: 1px dotted #ccc;
+        padding: 10px;
+        width: 100%;
+      }
+
+      a {
+        font-weight: normal !important;
+        font-size: 13px;
+        text-transform: none;
+        padding: 0;
+        margin-left: 10px;
+        line-height: normal;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+          padding-left: 10px ;
+        }
+      }
+    }
+
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  .header-info {
+    .col-xs-12 {
+      text-align: center !important;
+    }
+  }
+
+  .header-navbar-left {
+    margin: 0 !important;
+
+  }
+
+
+}
+
+@media (max-width: 484px) {
+  .header-banner {
+    text-align: center;
+
+    .header-banner-btn {
+      float: none !important;
+    }
+
+    .header-banner-countdown {
+      float: none !important;
+      margin-top: 20px;
+
+      #clock {
+        width: 300px;
+        margin: 0 auto !important;
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-sm-max) {
+  #menu {
+    display: none !important;
+  }
+}

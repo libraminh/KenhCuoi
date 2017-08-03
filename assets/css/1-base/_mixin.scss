@@ -1,0 +1,13 @@
+// Mixin
+@mixin font($font) {
+  font-family: $font, sans-serif;
+}
+
+// Extends
+%display-inline {
+  display: inline-table;
+}
+
+%font-weight {
+  font-weight: 600;
+}

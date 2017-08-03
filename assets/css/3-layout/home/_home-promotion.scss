@@ -1,0 +1,22 @@
+.home-promotion {
+  img {
+    width: 100%;
+    display: block;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      filter: opacity(0.7);
+    }
+  }
+
+  h5 {
+    color: $text-color3;
+    @extend %font-weight;
+    line-height: 1.4;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}

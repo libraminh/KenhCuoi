@@ -1,0 +1,15 @@
+// Button
+.btn-accent {
+  background: $accent-color;
+  border-radius: 0;
+  padding: 10px 15px;
+  color: $white-color;
+  font-size: 12px;
+  @extend  %font-weight;
+  transition: all .1s ease-in-out;
+
+  &:hover {
+    color: $white-color;
+    background: lighten($accent-color, 8%);
+  }
+}

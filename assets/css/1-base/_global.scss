@@ -1,0 +1,83 @@
+body {
+  @include font('Montserrat');
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+.text-accent {
+  color: $accent-color;
+}
+
+.text-primary {
+  color: $primary-color;
+}
+
+.margin-box {
+  margin: 40px 0;
+}
+
+.padding-off {
+  padding: 0 10px !important;
+}
+
+// Box Title
+.box-title {
+  h4 {
+    overflow: hidden;
+    color: $accent-color;
+
+    &:after, &:before {
+      content:"";
+      display: inline-block;
+      height: 0.5em;
+      vertical-align: bottom;
+      width: 100%;
+      border-top: 1px solid $border-color;
+    }
+
+    &:after {
+      margin-right: -100%;
+      margin-left: 10px;
+    }
+
+    &:before {
+      margin-right: 10px;
+      width: 5%;
+    }
+  }
+}
+
+// Show All Button
+.show-all {
+  h5 {
+    overflow: hidden;
+    color: $text-color4 !important;
+
+    &:after, &:before {
+      content:"";
+      display: inline-block;
+      height: 0.5em;
+      vertical-align: bottom;
+      width: 100%;
+      border-top: 1px solid $border-color;
+    }
+
+    &:after {
+      margin-right: -100%;
+      margin-left: 30px;
+    }
+
+    &:before {
+      margin-right: 30px;
+      width: 42%;
+    }
+  }
+}

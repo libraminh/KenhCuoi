@@ -1,0 +1,37 @@
+// Import Tools
+$icon-font-path: '0-tools/bootstrap/assets/fonts/bootstrap/';
+@import "0-tools/bootstrap/assets/stylesheets/bootstrap";
+@import "0-tools/bootstrap-select/bootstrap-select";
+@import "0-tools/font-awesome/css/font-awesome.min.css";
+@import "0-tools/animate.css";
+@import "0-tools/owl-carousel/owl.carousel";
+@import "0-tools/owl-carousel/owl.theme.default";
+@import "0-tools/hamburgers/hamburgers";
+
+// Import Base
+@import "1-base/vars";
+@import "1-base/mixin";
+@import "1-base/global";
+
+// Import Component
+@import "2-modules/button";
+@import "2-modules/navbar";
+
+// Import Layout
+@import "3-layout/home/header";
+@import "3-layout/home/home-carousel";
+@import "3-layout/home/home-search";
+@import "3-layout/home/home-ads";
+@import "3-layout/home/home-showcase";
+@import "3-layout/home/home-sidebar";
+@import "3-layout/home/home-service";
+@import "3-layout/home/home-promotion";
+@import "3-layout/home/home-idea";
+@import "3-layout/home/home-video";
+@import "3-layout/home/home-gallery";
+@import "3-layout/home/home-sale";
+@import "3-layout/home/home-subscribe";
+@import "3-layout/home/home-popular";
+
+//Import Responsive
+@import "4-responsive/home/header";

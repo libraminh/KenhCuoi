@@ -1,0 +1,116 @@
+// Section Header Info
+.header-info {
+  .wrap-header-info {
+    background: $navbar-bg;
+  }
+
+  p {
+    color: $white-color;
+    margin-top: 13px;
+    font-size: 11px;
+    @extend %font-weight;
+  }
+
+  &-navbar {
+    margin: 0;
+
+    li {
+      @extend %display-inline;
+      padding:  10px;
+      border-left: 1px solid #404040;
+
+      &:last-child {
+        border-right: 1px solid #404040;
+      }
+
+    a {
+      color: $white-color;
+      font-size: 11px;
+      @extend %font-weight;
+    }
+
+    }
+  }
+}
+
+// Section Header Banner
+.header-banner {
+  width: 100%;
+  padding: 15px 0;
+  background: url('../img/home/home-countdown.png') no-repeat center ;
+  background-size: cover;
+
+  &-wrap {
+    margin-top: 15px;
+    transform: translateY(-6px);
+
+    .wrap-count {
+      text-align: center;
+      color: #e34963;
+      @extend %font-weight;;
+      float: left;
+      margin: 0 15px;
+    }
+
+    .break {
+      display: block;
+    }
+
+    .btn-accent {
+      font-size: 11px;
+    }
+  }
+}
+
+// Section Header Navbar
+.mm-panel {
+  // padding: 40px 0 0 !important;
+}
+.header-navbar {
+  .wrap-header-navbar {
+    box-shadow: inset 0 1px 0px 1px rgba(black,0.15);
+  }
+
+  &-left {
+
+    .hamburger {
+      transform: translateY(3px);
+
+      &:focus {
+        outline: none;
+        border: none;
+      }
+    }
+
+  }
+
+  &-brand {
+    &-btn {
+      display: block;
+      position: relative;
+      top: 0;
+      left: 0;
+      padding: 0 20px;
+
+      .logo {
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        top: 10px;
+        left: 0px;
+        text-align: center;
+        z-index: 2;
+        transform: scale(1.2);
+      }
+
+      .small-logo {
+        width: 50%;
+        position: absolute;
+        top: 7px;
+        left: 45px;
+        z-index: 2;
+      }
+    }
+  }
+
+}

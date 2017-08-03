@@ -1,0 +1,21 @@
+.home-search {
+  padding: 20px 0;
+  border-bottom: 7px solid $accent-color;
+  &-wrap {
+
+    .col {
+      padding: 0 5px;
+    }
+
+    input, .dropdown-toggle {
+      border-radius: 0;
+    }
+  }
+
+  .btn-accent {
+    display: block;
+    height: 35px;
+  }
+
+
+}

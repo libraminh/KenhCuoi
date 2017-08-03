@@ -1,0 +1,22 @@
+// Navbar Small
+.navbar-small {
+  .navbar-small-ul {
+    margin: 10px 0;
+
+    li {
+      @extend %display-inline;
+    }
+
+    a {
+      font-size: 12px;
+      @extend %font-weight;
+      color: $text-color5;
+      padding: 0 5px;
+      transition: all .2s ease-in-out;
+
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  }
+}

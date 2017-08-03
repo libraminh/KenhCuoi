@@ -1,0 +1,60 @@
+header.header
+  section.header-info
+    .wrap-header-info
+      .container
+        .row
+          .col-xs-12.col-sm-5.col-md-6
+            p LIÊN HỆ QUẢNG CÁO : 0906034322 - 2145439229
+          .col-xs-12.col-sm-7.col-md-6.pull-right.text-right
+            ul.header-info-navbar.text-uppercase.list-unstyled
+              li: a(href="#") Đăng ký nhà cung cấp
+              li: a(href="#") Đăng ký
+              li: a(href="#") Đăng nhập
+              li: a(href="#")
+                i.fa.fa-search(aria-hidden='true')
+              
+  section.header-banner
+    .container
+      .row
+        .header-banner-wrap
+          .col-md-3.col-lg-2.header-banner-btn.pull-right
+            a.btn.btn-accent.btn-block.text-uppercase(href="#") ĐĂNG KÝ NHẬN VÉ MỜI
+          .col-md-4.col-lg-3.header-banner-countdown.pull-right
+            #clock
+          
+  section.header-navbar
+    .wrap-header-navbar
+      .container
+        .row
+          .col-md-5
+            nav#menu
+              ul.header-navbar-left.list-unstyled.text-uppercase
+                li: a(href="#") Trang Chủ
+                li: a(href="#") DỊCH VỤ
+                li: a(href="#") KHUYẾN MÃI
+                  ul.header-navbar-left-sub.list-unstyled.text-uppercase
+                    li: a(href="#") Trang Chủ
+                    li: a(href="#") DỊCH VỤ
+                    li: a(href="#") KHUYẾN MÃI
+                li: a(href="#") VIDEO 
+                li: a.hidden-md.hidden-lg(href="#") Ý Tưởng Cưới
+                li: a.hidden-md.hidden-lg(href="#") BỘ SƯU TẬP
+                li: a.hidden-md.hidden-lg(href="#") KÊNH QUÀ TẶNG
+          .col-md-2.hidden-sm.hidden-xs
+            .header-navbar-brand
+              a.header-navbar-brand-btn(href="#")
+                img.logo(src="assets/img/home/base_logo_2.svg", alt="")
+                img.small-logo(src="assets/img/home/logo.png", alt="")
+          .col-md-5
+            ul.header-navbar-left.list-unstyled.text-uppercase
+              li.hidden-xs.hidden-sm: a(href="#") Ý Tưởng Cưới
+              li.hidden-xs.hidden-sm: a(href="#") BỘ SƯU TẬP
+              li.hidden-xs.hidden-sm: a(href="#") Cộng đồng
+                ul.header-navbar-left-sub.list-unstyled.text-uppercase
+                  li: a(href="#") Góc chia sẻ
+                  li: a(href="#") Ảnh cưới đẹp
+                  
+              li.hidden-md.hidden-lg
+                button#mm-open-menu.hamburger.hamburger--collapse.mm-slideout(type='button')
+                  span.hamburger-box
+                    span.hamburger-inner

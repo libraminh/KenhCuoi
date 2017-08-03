@@ -1,0 +1,74 @@
+.home-carousel {
+  &-wrap {
+    position: relative;
+    overflow: hidden;
+
+    &-carousel {
+      z-index: 0;
+      position: relative;
+
+      a {
+        color: $white-color;
+        transition: all .2s ease-in-out;
+
+      }
+
+      img {
+        width: 100%;
+      }
+
+      &-title {
+        color: $white-color;
+        font-size: 12px;
+        background: rgba(black,0.5);
+        border-radius: 40px;
+        padding: 15px 10px;
+        width: 70%;
+        height: 150px;
+        position: absolute;
+        left: 15%;
+        bottom: -75px;
+        margin: 0 auto !important;
+        text-align: center;
+
+      }
+
+      .owl-nav {
+        .owl-prev, .owl-next {
+          position: absolute;
+          bottom: 32px;
+          left: 19%;
+          background: none;
+          color: $white-color;
+          font-size: 18px;
+
+          &:hover {
+            background: none;
+          }
+
+          &.owl-next {
+            left: auto;
+            right: 19%;
+          }
+        }
+      }
+    }
+
+    .lace {
+      width: 102%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: -12px;
+      transform: scale(1.5);
+      z-index: 1;
+
+      &.lace-bottom {
+        top: auto;
+        bottom: 0px;
+        transform: scale(1.5) rotateX(180deg);
+      }
+    }
+  }
+
+}
