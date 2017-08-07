@@ -3,6 +3,11 @@ jQuery(document).ready(function( $ ) {
   activeCarousel();
   // hamburgerBtn();
   countDown();
+  
+  $('#amlich-calendar').amLich({
+    type: 'calendar',
+    tableWidth: '200px'
+  });
 
   $('img[src$=".svg"]').each(function() {
         var $img = jQuery(this);
@@ -71,6 +76,9 @@ function activeCarousel() {
         loop: true,
         nav: false,
         dots: false,
+        autoplay: true,
+        autoplayHoverPause: false,
+        autoplayTimeout: 4000,
         navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
         URLhashListener:true,
         autoplayHoverPause:true,

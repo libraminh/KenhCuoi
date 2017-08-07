@@ -1,4 +1,12 @@
 .home-popular {
+  &-date {
+    color: $text-color1;
+
+    i {
+      margin: 0 3px;
+    }
+  }
+
   .col-md-12 {
     margin-bottom: 20px;
   }

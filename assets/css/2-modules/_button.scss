@@ -13,3 +13,19 @@
     background: lighten($accent-color, 8%);
   }
 }
+
+// Button Tag
+.btn-tag {
+  background: $tag-bg;
+  color: $text-color6;
+  padding: 10px;
+  margin: 7px 7px 0 0;
+  border-radius: 0;
+  @extend %font-weight;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    background: $accent-color;
+    color: $white-color;
+  }
+}

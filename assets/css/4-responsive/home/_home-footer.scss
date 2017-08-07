@@ -1,0 +1,27 @@
+@media (max-width: $screen-md-max) {
+  .footer-copyright {
+    .copyright-nav {
+      a {
+        font-size: 12px;
+        padding-right: 5px !important;
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-sm-max) {
+  .footer {
+    .col-md-6:nth-child(2) {
+      text-align: center !important;
+    }
+    .footer-copyright {
+      .copyright-nav {
+        a {
+          font-size: 12px;
+          padding-right: 5px !important;
+        }
+      }
+    }
+  }
+
+}

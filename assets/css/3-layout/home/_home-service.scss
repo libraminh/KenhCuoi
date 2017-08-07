@@ -1,4 +1,5 @@
 .home-service {
+
   .col-md-3 {
     margin: 10px 0;
   }
@@ -9,67 +10,118 @@
 
   &-wrap {
     position: relative;
-    background: red;
     z-index: 10;
 
     &:hover .home-service-overlay {
       background: linear-gradient(to bottom, rgba(171,19,45,0.4) 0%,rgba(171,19,45,1) 100%);
     }
 
-    &:hover .home-service-overlay h4 {
+    &:hover h4 {
       color: $white-color;
     }
+
   }
 
-  &-overlay {
+  // &-overlay {
+  //   position: absolute;
+  //   right: 0;
+  //   bottom: 0;
+  //   left: 0;
+  //   background: rgba($white-color,0.9);
+  //   height: 50%;
+  //   transition: all .2s ease-in-out;
+  //
+  //   h4 {
+  //     color: $accent-color;
+  //     @extend %font-weight;
+  //     word-wrap: break-word;
+  //     width: 90%;
+  //     display: block;
+  //     margin: 40px auto 0;
+  //     text-align: center;
+  //     line-height: 1.3;
+  //     transition: all .2s ease-in-out;
+  //   }
+  //
+  //   svg path {
+  //     fill: $accent-color;
+  //     width: 150px;
+  //     font-size: 220px;
+  //   }
+  //
+  //   svg {
+  //     position: absolute;
+  //     bottom: 90%;
+  //     left: 42%;
+  //     width: 20%;
+  //
+  //     &#Layer_1 {
+  //       transform: rotate(45deg);
+  //     }
+  //   }
+  //
+  //   img {
+  //     position: absolute;
+  //
+  //     &:nth-child(1) {
+  //       display: block;
+  //       bottom: 70%;
+  //       left: 29%;
+  //     }
+  //   }
+  // }
+
+
+
+}
+
+.home-service-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .home-service-icon, .home-service-lace {
     position: absolute;
-    right: 0;
+    z-index: 1;
+  }
+
+  h4 {
+    position: absolute;
+    top: 65%;
+    z-index: 1;
+    text-align: center;
+    color: $accent-color;
+    @extend %font-weight;
+    word-wrap: break-word;
+    width: 90%;
+    display: block;
+    line-height: 1.3;
+    transition: all .2s ease-in-out;
+  }
+
+  svg path {
+    fill: $accent-color;
+    width: 150px;
+    font-size: 220px;
+  }
+
+  svg {
+    width: 20%;
+    z-index: 1;
+
+    &#Layer_1 {
+      transform: rotate(45deg);
+    }
+  }
+
+  .home-service-overlay {
+    position: absolute;
     bottom: 0;
     left: 0;
-    background: rgba($white-color,0.9);
+    right: 0;
     height: 50%;
+    background: rgba($white-color,0.9);
     transition: all .2s ease-in-out;
-
-    h4 {
-      color: $accent-color;
-      @extend %font-weight;
-      word-wrap: break-word;
-      width: 90%;
-      display: block;
-      margin: 40px auto 0;
-      text-align: center;
-      line-height: 1.3;
-      transition: all .2s ease-in-out;
-    }
-
-    svg path {
-      fill: $accent-color;
-      width: 150px;
-      font-size: 220px;
-    }
-
-    svg {
-      position: absolute;
-      bottom: 90%;
-      left: 42%;
-      width: 20%;
-
-      &#Layer_1 {
-        transform: rotate(45deg);
-      }
-    }
-
-    img {
-      position: absolute;
-
-      &:nth-child(1) {
-        display: block;
-        bottom: 70%;
-        left: 29%;
-      }
-    }
   }
-
-
-
 }

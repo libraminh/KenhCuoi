@@ -104,7 +104,12 @@
 
   }
 
+}
 
+@media (max-width: 620px) {
+  .header-banner {
+    background-size: auto;
+  }
 }
 
 @media (max-width: 484px) {

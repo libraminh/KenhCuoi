@@ -4,6 +4,7 @@ $icon-font-path: '0-tools/bootstrap/assets/fonts/bootstrap/';
 @import "0-tools/bootstrap-select/bootstrap-select";
 @import "0-tools/font-awesome/css/font-awesome.min.css";
 @import "0-tools/animate.css";
+@import "0-tools/amlich/jquery.amlich.css";
 @import "0-tools/owl-carousel/owl.carousel";
 @import "0-tools/owl-carousel/owl.theme.default";
 @import "0-tools/hamburgers/hamburgers";
@@ -32,6 +33,13 @@ $icon-font-path: '0-tools/bootstrap/assets/fonts/bootstrap/';
 @import "3-layout/home/home-sale";
 @import "3-layout/home/home-subscribe";
 @import "3-layout/home/home-popular";
+@import "3-layout/home/home-footer";
 
 //Import Responsive
 @import "4-responsive/home/header";
+@import "4-responsive/home/home-service";
+@import "4-responsive/home/home-search";
+@import "4-responsive/home/home-showcase";
+@import "4-responsive/home/home-video";
+@import "4-responsive/home/home-subscribe";
+@import "4-responsive/home/home-footer";

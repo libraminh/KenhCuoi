@@ -12,6 +12,10 @@ p {
   margin: 0;
 }
 
+.home-wrap {
+  overflow: hidden;
+}
+
 .text-accent {
   color: $accent-color;
 }
@@ -24,8 +28,24 @@ p {
   margin: 40px 0;
 }
 
+.margin-box-1 {
+  margin: 10px 0;
+}
+
+.margin-box-2 {
+  margin: 20px 0;
+}
+
+.margin-box-3 {
+  margin: 30px 0;
+}
+
 .padding-off {
   padding: 0 10px !important;
+}
+
+.padding-off-1 {
+  padding: 0 5px !important;
 }
 
 // Box Title
@@ -55,6 +75,24 @@ p {
   }
 }
 
+.box-title-1 {
+  h4 {
+    overflow: hidden;
+    color: $accent-color;
+
+    &:after {
+      content:"";
+      display: inline-block;
+      height: 0.5em;
+      vertical-align: bottom;
+      width: 100%;
+      border-top: 1px solid $border-color;
+      margin-right: -100%;
+      margin-left: 10px;
+    }
+  }
+}
+
 // Show All Button
 .show-all {
   h5 {
@@ -79,5 +117,33 @@ p {
       margin-right: 30px;
       width: 42%;
     }
+  }
+}
+
+.show-all-1 {
+  h5 {
+    overflow: hidden;
+    color: $text-color4 !important;
+    position: relative;
+    display: block;
+    width: 100%;
+
+    &:before {
+      content:"";
+      display: inline-block;
+      height: 0.5em;
+      vertical-align: bottom;
+      width: 100%;
+      border-top: 1px solid $border-color;
+      margin-right: 10%;
+      position: absolute;
+      top: 50%;
+      right: 60px;
+    }
+
+    strong {
+      float: right;
+    }
+
   }
 }

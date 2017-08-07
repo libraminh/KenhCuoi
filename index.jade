@@ -13,35 +13,44 @@ html
       include jadefiles/home/header.jade
       include jadefiles/home/home-carousel.jade
       include jadefiles/home/home-search.jade
-      .container
-        include jadefiles/home/home-ads.jade
-        .row
-          .col-md-8
-            include jadefiles/home/home-showcase.jade
-            .margin-box
-            include jadefiles/home/home-service.jade
-            .margin-box
-            include jadefiles/home/home-promotion.jade
-            .margin-box
-            include jadefiles/home/home-collection.jade
-            .margin-box
-            include jadefiles/home/home-idea.jade
-            .margin-box
-            include jadefiles/home/home-video.jade
-            .margin-box
-            include jadefiles/home/home-gallery.jade
-          .col-md-4
-            include jadefiles/home/home-sidebar.jade
-            .margin-box
-            include jadefiles/home/home-popular.jade
-        .margin-box
-        include jadefiles/home/home-sale.jade
-        .margin-box
-        include jadefiles/home/home-subscribe.jade
-        
+      
       .home-sections
+        .container
+          include jadefiles/home/home-ads.jade
+          .row
+            .col-xs-12.col-sm-8.col-md-8
+              include jadefiles/home/home-showcase.jade
+              .margin-box
+              include jadefiles/home/home-service.jade
+              .margin-box
+              include jadefiles/home/home-promotion.jade
+              .margin-box
+              include jadefiles/home/home-collection.jade
+              .margin-box
+              include jadefiles/home/home-idea.jade
+              .margin-box
+              include jadefiles/home/home-video.jade
+              .margin-box
+              include jadefiles/home/home-gallery.jade
+            .hidden-xs.col-sm-4.col-md-4
+              include jadefiles/home/home-sidebar.jade
+              .margin-box
+              include jadefiles/home/home-popular.jade
+              .margin-box
+              include jadefiles/home/home-share.jade
+              .margin-box
+              include jadefiles/home/home-tag.jade
+              .margin-box
+              include jadefiles/home/home-calendar.jade
+          .margin-box
+          include jadefiles/home/home-sale.jade
+          .margin-box
+          include jadefiles/home/home-subscribe.jade
+          
+      include jadefiles/home/home-footer.jade
+      
+      //- <div id="amlich-calendar"></div>
 
-    div(style="height: 1000px")  
     script(src='https://code.jquery.com/jquery-2.2.4.min.js', integrity='sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=', crossorigin='anonymous')
     script(src="assets/js/bootstrap.min.js")
     script(src='assets/js/jquery.easing.1.3.js')
@@ -51,5 +60,7 @@ html
     script(src='assets/js/owl.carousel.min.js')
     script(src='assets/js/jquery.countdown.min.js')
     script(src='assets/js/bootstrap-select.js')
+    script(src='assets/js/jquery.amlich.js')
+    //- script(src='assets/js/lich/glDatePicker.js')
     script(src="assets/js/functions.js")
   

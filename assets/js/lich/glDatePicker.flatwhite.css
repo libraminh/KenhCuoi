@@ -1,0 +1,239 @@
+.gldp-flatwhite {
+	font-family: 'Arimo';
+}
+
+/* Core style for every cell */
+.gldp-flatwhite .core {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position: relative;
+    float: left;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    color: #484848;
+}
+
+/* Cell border */
+.gldp-flatwhite .border {
+	border-style: solid;
+	border-width: 0;
+	border-color: rgba(0, 0, 0, 0);
+}
+
+/* Month/Year text and select */
+.gldp-flatwhite .monyear, .gldp-flatwhite .monyear select {
+    background: #cc2844;
+    color: #FFFFFF;
+    background-image: url("bg_top.png");
+    background-repeat: repeat;
+}
+
+/* Month/Year text */
+.gldp-flatwhite .monyear span {
+	margin: 0 5px 0 5px;
+}
+
+/* Prev/Next arrows */
+.gldp-flatwhite .prev-arrow,
+.gldp-flatwhite .next-arrow {
+	color: #666;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75);
+	display: block;
+    height: 100%;
+	text-decoration: none;
+}
+.gldp-flatwhite .prev-arrow { background:url("arrow-prev.png") no-repeat center center; }
+.gldp-flatwhite .next-arrow { background:url("arrow-next.png") no-repeat center center; }
+.gldp-flatwhite .prev-arrow:active,
+.gldp-flatwhite .next-arrow:active {
+	color: #000;
+}
+
+.gldp-flatwhite .prev-arrow-off,
+.gldp-flatwhite .next-arrow-off {
+	color: #000;
+	opacity: 0.15;
+}
+
+/* Days of the week */
+.gldp-flatwhite .dow {
+    color: #cc2844;
+}
+
+/* Weekdays */
+.gldp-flatwhite .mon,
+.gldp-flatwhite .tue,
+.gldp-flatwhite .wed,
+.gldp-flatwhite .thu,
+.gldp-flatwhite .fri {
+	font-weight: bold;
+}
+
+/* Weekend days */
+.gldp-flatwhite .sat,
+.gldp-flatwhite .sun {
+	color: #888;
+	font-weight: bold;
+}
+
+/* Selectable days that are outside of current month being shown */
+.gldp-flatwhite .outday {
+	color: #aaa !important;
+	opacity: 0;
+}
+
+/* Hover */
+.gldp-flatwhite .mon:hover,
+.gldp-flatwhite .tue:hover,
+.gldp-flatwhite .wed:hover,
+.gldp-flatwhite .thu:hover,
+.gldp-flatwhite .fri:hover,
+.gldp-flatwhite .sat:hover,
+.gldp-flatwhite .sun:hover {
+	background: #eee;
+}
+
+/* Non-Selectable days */
+.gldp-flatwhite .noday {
+	color: #bbb;
+	font-weight: normal;
+	cursor: wait !important;
+	background: #ddd;
+}
+.gldp-flatwhite .special , .gldp-flatwhite .selected {
+    position: relative;
+    color: white !important;
+}
+.gldp-flatwhite .special:before , .gldp-flatwhite .selected:before {
+    color: #fff;
+    content: "";
+    position: absolute;
+    display: block;
+    height: 22px !important;
+    width: 22px !important;
+    padding: 4px;
+    right: 0;
+	z-index: -1;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    top: 0;
+    line-height: initial !important;
+    border-radius: 50%;
+}
+.gldp-flatwhite .special:before {
+    background: #b41934;
+}
+.gldp-flatwhite .selected:before {
+	background: rgba(175, 205, 12, 0.53);
+}
+/* Currently selected day */
+div#mycalendar-inner {
+    border: 1px solid #e0435e;
+}
+/* Today */
+.gldp-flatwhite .today {
+	font-weight: bold;
+}
+
+/* Special */
+.gldp-flatwhite .red {
+	background: #222222 !important;
+}
+/* custom */
+#notice {
+	margin-top:5px;
+}
+#notice span {
+	font-size: 12px;
+	padding: 2px 5px;
+	text-transform: uppercase;
+	cursor:pointer;
+}
+#notice .good {
+	float: left;
+	background:#FBB03A;
+}
+#notice .gotoday {
+	float: right;
+	background:#008000;
+}
+#notice .bad {
+	float: left;
+	background:#222222;
+}
+#kccalendar select {
+	width:auto !important;
+}
+#kccalendar div#current {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    text-transform: uppercase;
+    background-image: url("bg_top.png");
+    background-repeat: repeat;
+	border-bottom: 1px solid #961d32;
+}
+#mycalendar {
+	position:relative;
+	margin-top: 2px;
+}
+#mycalendar #mydate {
+	position:absolute;
+	top:-100%;
+}
+#myselected .left {
+    float: left;
+    font-size: 18px;
+    color: white;
+    width: 50%;
+    padding: 24px 16px;
+    border-width: 1px;
+    border-right-width: 1px;
+    text-align: center;
+    border-right-style: solid;
+    font-family: 'Arimo';
+    webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#myselected .right {
+    float: right;
+    font-size: 14px;
+    color: white;
+    width: 50%;
+    padding: 13px 16px;
+    text-align: left;
+    font-family: 'Arimo';
+    webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#myselected .right span {
+	display: block;
+}
+#callglDatePickerNotice {
+	position:fixed;
+	right:5px;
+	top:5px;
+	z-index:3000;
+}
+.callglDatePickerNotice {
+	background: url("dot-pink.png") repeat scroll 0 0 #D1104E;
+	border: 1px solid #FFF;
+	color: #FFFFFF;
+	font-size: 15px;
+	padding: 10px;
+	width: 260px;
+	margin-bottom:5px;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}

@@ -1,0 +1,115 @@
+.footer {
+  color: $text-color4;
+  background: $footer-bg;
+
+  h3 {
+    color: $text-color3;
+    @extend %font-weight;
+  }
+
+  .footer-nav {
+    margin-top: 25px;
+
+    li {
+      padding: 10px 0;
+      border-top: 1px solid $border-color1;
+    }
+
+    i {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+
+    }
+  }
+
+  .footer-nav-service {
+    a {
+      color: $text-color4;
+
+      &:hover {
+        color: $text-color7;
+      }
+
+      &:hover i {
+        color: $accent-color;
+      }
+    }
+  }
+
+  .footer-social {
+    li {
+      @extend %display-inline;
+    }
+
+    a {
+      color: $white-color;
+      font-size: 20px;
+      margin: 0 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      background: $social-bg;
+      border-radius: 50%;
+      position: relative;
+      transition: all .2s ease-in-out;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:hover {
+        background: $accent-color;
+      }
+    }
+  }
+
+  &-connect {
+    .footer-wrap-box {
+      overflow: hidden;
+      margin: 5px 0;
+    }
+
+    img {
+      width: 100%;
+      transition: all .2s ;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .footer-copyright {
+    color: $text-color4;
+    background: $copyright-bg;
+    width: 100%;
+
+    .row {
+      width: 100%;
+      height: 70px;
+      display: flex;
+      align-items: center;
+
+    }
+
+    .copyright-nav {
+      margin: 0;
+
+      li {
+        display: inline-table;
+
+      }
+
+      a {
+        color: $text-color4;
+        padding-right: 6px;
+        padding-left: 3px;
+        border-right: 1px solid $text-color4;
+      }
+    }
+  }
+
+}
