@@ -1,0 +1,168 @@
+.post-video-showcase {
+  &-wrap {
+    iframe {
+      width: 100%;
+      min-height: 470px;
+    }
+
+    h4 {
+      font-size: 18px;
+      margin: 20px 0;
+    }
+  }
+
+  &-metadata {
+    padding: 10px 0;
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+
+    .home-showcase-date {
+      display: inline;
+    }
+  }
+
+  &-morelink {
+    background: $border-color2;
+    padding: 15px 60px;
+
+    &-nav {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        margin: 5px 0;
+
+        &:hover a {
+          color: $accent-color;
+        }
+
+        &:before {
+          content: '';
+          background: $accent-color;
+          width: 6px;
+          height: 6px;
+          border-radius: 100%;
+          display: inline-block;
+          margin-right: 10px;
+        }
+      }
+
+      a {
+        color: $text-color;
+      }
+    }
+  }
+
+  &-content {
+    margin: 15px 0;
+    color: $text-color3;
+  }
+
+  &-tag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+
+    &-tags {
+      display: inline !important;
+
+      a {
+        color: $text-color3;
+
+        &:hover {
+          color: $accent-color;
+        }
+      }
+    }
+
+    &-wrap {
+      display: inline;
+
+      .footer-social {
+        display: inline !important;
+
+        li:nth-child(1) a {
+          background: #3b5999;
+        }
+
+        li:nth-child(2) a {
+          background: #0084ff;
+        }
+
+        li:nth-child(3) a {
+          background: #dd4b39;
+        }
+
+        a {
+            width: 40px;
+            height: 40px;
+        }
+      }
+    }
+  }
+
+  &-relate {
+    img {
+      width: 100%;
+    }
+
+    h5 {
+      color: $text-color;
+      @extend %font-weight;
+      line-height: 1.3;
+      @include hoverColor($accent-color);
+
+    }
+
+    .home-showcase-date {
+      color: $text-color2;
+      @extend %font-weight;
+    }
+  }
+
+  &-comment {
+    .avatar {
+      width: 74px;
+      height: 74px;
+      display: block;
+    }
+
+    &-write {
+      textarea {
+        height: 100px;
+        border-radius: 0;
+      }
+
+      .btn-accent {
+        color: $white-color !important;
+      }
+    }
+
+    &-detail {
+      h4 {
+        margin-top: 0;
+      }
+
+      &-date {
+        margin-bottom: 10px;
+        color: $text-color1;
+      }
+
+      &-content {
+        color: $text-color3;
+      }
+
+      .breadcrumb-3 {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .btn-more {
+    padding: 12px 15px !important;
+  }
+}

@@ -1,0 +1,66 @@
+.showcase-global {
+  .owl-prev, .owl-next {
+    background: rgba(black,0.6) !important;
+    position: absolute;
+    top: 35%;
+    border-radius: 0 !important;
+    padding: 15px 25px !important;
+    font-size: 20px !important;
+    margin: 0 !important;
+    color: $text-color6 !important;
+
+    &.owl-next {
+      right: 0px;
+    }
+
+    &.owl-prev {
+      left: 0px;
+    }
+  }
+
+}
+
+.post-list-content {
+  .media {
+    margin-bottom: 20px;
+
+    .post-list-wrap {
+      position: relative;
+    }
+
+    .media-object {
+      width: 100%;
+    }
+
+    .home-showcase-wrap-title {
+      background: #363a3b;
+      padding: 10px;
+      font-size: 12px;
+    }
+  }
+}
+
+#Layer_7 path {
+  fill: red;
+  width: 10%;
+}
+
+#Layer_7 {
+  width: 10% !important;
+}
+
+.postlist-nav-menu {
+  a {
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+a svg:hover #nhancuoi {
+  fill: blue !important;
+}
+
+img.nhancuoi svg #nhancuoi {
+  fill: red !important;
+}

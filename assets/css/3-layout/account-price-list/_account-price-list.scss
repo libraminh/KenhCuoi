@@ -1,0 +1,36 @@
+.account-price-list {
+
+  &-primary-padding {
+    padding: 20px 50px;
+  }
+
+  &-primary {
+    li {
+      border-bottom: 1px solid $border-color;
+    }
+  }
+
+  &-pagination {
+    ul {
+      margin: 5px 0;
+    }
+  }
+
+  .account-manage-album-primary-nav-sub {
+
+    li {
+    }
+    span.text-grey {
+      margin-right: 10px;
+    }
+  }
+
+  .account-manage-album-primary-nav {
+    &-sub {
+      li {
+        padding: 5px 0;
+        border: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.home-carousel-wrap-carousel1 {
+  position: relative;
+
+  .carousel-title {
+    color: $accent-color;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    @extend %font-weight;
+
+  }
+}

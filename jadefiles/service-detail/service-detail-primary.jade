@@ -1,0 +1,228 @@
+section.service-detail-primary
+  .row
+    .col-md-6
+      .service-detail-primary-content
+        .service-detail-primary-content-header
+          span.left
+            h4.text-uppercase
+              strong MỘC THANH STUDIO
+            i.fa.fa-check(aria-hidden='true')
+            
+          span.right
+            span ( 10 đánh giá )
+            span 
+              i.fa.fa-heart.text-accent(aria-hidden='true')
+              i.fa.fa-heart.text-accent(aria-hidden='true')
+              i.fa.fa-heart.text-accent(aria-hidden='true')
+              i.fa.fa-heart(aria-hidden='true')
+              i.fa.fa-heart(aria-hidden='true')
+
+        .service-detail-primary-content-info
+          .media
+            .media-left
+              a(href='#')
+                img.media-object(src='assets/img/service-detail/service-avatar.png', alt='...')
+            
+            .margin-box-2.visible-xs.visible-sm
+            .clearfix.visible-xs
+            .media-body
+              ul.list-unstyled
+                li 
+                  i.fa.fa-map-marker.text-accent(aria-hidden='true')
+                  span  45A Nguyễn Thông, Phường 7, Quận 3, Hồ Chí Minh
+                li 
+                  i.fa.fa-phone.text-accent(aria-hidden='true')
+                  span   028 3933 37 36 – 0934718668
+                li 
+                  i.fa.fa-globe.text-accent(aria-hidden='true')
+                  span   Mocthanhstudio.com
+                li 
+                  i.fa.fa-envelope.text-accent(aria-hidden='true')
+                  span   Mocthanhstudio@gmail.com
+                  
+              ul.footer-social.list-unstyled
+                li
+                  a(href="")
+                    i.fa.fa-facebook(aria-hidden='true') 
+                li: a(href="")
+                  i.fa.fa-twitter(aria-hidden='true') 
+                li: a(href="")
+                  i.fa.fa-google-plus(aria-hidden='true') 
+        
+        .margin-box-2    
+        ul.service-detail-primary-content-list.list-unstyled
+          li 
+            h4.text-uppercase
+              strong Chụp Ảnh Cưới
+            ol.breadcrumb.breadcrumb-4
+              li
+                a(href='#') 6,000,000 VNĐ
+              li.active
+                a(href='#') Albumn
+                
+          li 
+            h4.text-uppercase
+              strong Trang Phục Cưới
+            ol.breadcrumb.breadcrumb-4
+              li
+                a(href='#') 2,000,000 VNĐ
+              li.active
+                a(href='#') Bộ
+                
+          li 
+            h4.text-uppercase
+              strong Trang Điểm Cô Dâu
+            ol.breadcrumb.breadcrumb-4
+              li
+                a(href='#') 1,000,000 VNĐ
+              li.active
+                a(href='#') Lần
+        
+        .margin-box        
+        a.btn.btn-accent-1.btn-block.text-uppercase(data-toggle="modal" data-target="#service-detail-modal") Nhận Báo Giá
+        
+    // Modal
+    #service-detail-modal.modal.fade(tabindex='-1', role='dialog' aria-labelledby="myModalLabel")
+      .modal-dialog(role='document')
+        .modal-content
+          .modal-header
+            img.modal-lace(src="assets/img/ren.png", alt="")
+            button.close(type='button', data-dismiss='modal', aria-label='Close')
+              span(aria-hidden='true') &times;
+            |           
+            h4.modal-title.text-uppercase.text-accent.text-center
+              strong Đăng ký nhận báo giá
+          |         
+          .modal-body
+            .row
+              form
+                .col-md-6
+                  .form-group
+                    label.text-uppercase Tên Của Bạn
+                    input.form-control(type="text") 
+                    
+                .col-md-6
+                  .form-group
+                    label.text-uppercase Số Điện Thoại Của Bạn
+                    input.form-control(type="tel")  
+                    
+            .row
+              form
+                .col-md-6
+                  .form-group
+                    label.text-uppercase Email Của Bạn
+                    input.form-control(type="email") 
+                    
+                .col-md-6
+                  .form-group
+                    label.text-uppercase Ngày Cưới Dự Kiến
+                    input.form-control(type="date")      
+                    
+            .checkbox
+              label
+                input(type='checkbox')
+                |  Chưa xác định ngày cưới
+                
+            .margin-box-2    
+            form
+              .form-group
+                label.text-uppercase Lời Nhắn
+                textarea.form-control(type="text" rows="3") 
+                    
+          .modal-footer
+            button.btn.btn-accent.text-uppercase(type='button') Gửi
+            img.modal-lace-footer(src="assets/img/ren.png", alt="")
+  
+        
+    .margin-box-3.visible-xs.visible-sm    
+    .col-md-6
+      .owl-carousel.owl-theme.service-detail-showcase-carousel
+        .item(data-hash="1")
+          img(src="assets/img/service-detail/service-detail_1.png", alt="")
+            
+        .item(data-hash="2")
+          img(src="assets/img/service-detail/service-detail_1.png", alt="")
+            
+        .item(data-hash="3")
+          img(src="assets/img/service-detail/service-detail_1.png", alt="")
+            
+      .margin-box-2
+            
+      .owl-carousel.owl-theme.service-detail-showcase-carousel-direction-carousel
+        .item
+          a.url(href='#1')
+            img(src="assets/img/service-detail/service-detail_2.png", alt="")
+              
+        .item
+          a.url(href='#2')
+            img(src="assets/img/service-detail/service-detail_3.png", alt="")
+              
+        .item
+          a.url(href='#3')
+            img(src="assets/img/service-detail/service-detail_4.png", alt="")
+              
+        .item
+          a.url(href='#2')
+            img(src="assets/img/service-detail/service-detail_3.png", alt="")
+              
+        .item
+          a.url(href='#3')
+            img(src="assets/img/service-detail/service-detail_4.png", alt="")
+
+  .margin-box
+  .service-detail-primary-quote
+    p Một Lễ Hội Cưới với chủ đề Vùng Đất Nguyện Cầu với quy mô hoành tráng sẽ được diễn ra vào ngày 9 &10 tháng 7 năm 2016 tại Queen Plaza Kỳ Hòa – 16A Lê Hồng Phong, P12, Quận 10, TP.HCM với hàng loạt chương trình đặc sắc sẽ mang đến cho khách tham quan những trải nghiệm vô cùng tuyệt vời và thú vị.
+    p Trung tâm Hội nghị & Tiệc cưới Metropole – được phát triển và điều hành bởi nhà quản lý chuỗi khách sạn, nhà hàng Quê Hương – Liberty Group danh tiếng tại Sài Gòn. Metropole tọa lạc tại đường Lý Chính Thắng, quận 3 – là một trong những vị trí thuận lợi cho tổ chức tiệc cưới.
+    p Một Lễ Hội Cưới với chủ đề Vùng Đất Nguyện Cầu với quy mô hoành tráng sẽ được diễn ra vào ngày 9 &10 tháng 7 năm 2016 tại Queen Plaza Kỳ Hòa – 16A Lê Hồng Phong, P12, Quận 10, TP.HCM với hàng loạt chương trình đặc sắc sẽ mang đến cho khách tham quan những trải nghiệm vô cùng tuyệt vời và thú vị.
+    p Trung tâm Hội nghị & Tiệc cưới Metropole – được phát triển và điều hành bởi nhà quản lý chuỗi khách sạn, nhà hàng Quê Hương – Liberty Group danh tiếng tại Sài Gòn. Metropole tọa lạc tại đường Lý Chính Thắng, quận 3 – là một trong những vị trí thuận lợi cho tổ chức tiệc cưới.
+    
+  .margin-box
+  .show-all
+    a(href='#')
+      h5.text-uppercase
+        strong KHUYẾN MÃI, DỊCH VỤ CỦA CHÚNG TÔI
+    
+  .margin-box      
+  .service-detail-primary-more      
+    .row
+      .col-sm-3.col-md-3
+        a(href="#"): img(src="assets/img/service-detail/more/more_1.png", alt="")
+        a(href="#"): h5.text-uppercase
+          strong SIÊU KHUYẾN MÃI CƯỚI CHO THÁNG 7 TƯƠI XANH
+          
+      .col-sm-3.col-md-3
+        a(href="#"): img(src="assets/img/service-detail/more/more_2.png", alt="")
+        a(href="#"): h5.text-uppercase
+          strong SIÊU KHUYẾN MÃI CƯỚI CHO THÁNG 7 TƯƠI XANH
+          
+      .col-sm-3.col-md-3
+        a(href="#"): img(src="assets/img/service-detail/more/more_3.png", alt="")
+        a(href="#"): h5.text-uppercase
+          strong SIÊU KHUYẾN MÃI CƯỚI CHO THÁNG 7 TƯƠI XANH
+          
+      .col-sm-3.col-md-3
+        a(href="#"): img(src="assets/img/service-detail/more/more_4.png", alt="")
+        a(href="#"): h5.text-uppercase
+          strong SIÊU KHUYẾN MÃI CƯỚI CHO THÁNG 7 TƯƠI XANH
+    
+    .margin-box-1      
+    .row
+      .col-sm-3.col-md-3
+        a(href="#"): img(src="assets/img/service-detail/more/more_5.png", alt="")
+        a(href="#"): h5.text-uppercase
+          strong SIÊU KHUYẾN MÃI CƯỚI CHO THÁNG 7 TƯƠI XANH
+          
+      .col-sm-3.col-md-3
+        a(href="#"): img(src="assets/img/service-detail/more/more_6.png", alt="")
+        a(href="#"): h5.text-uppercase
+          strong SIÊU KHUYẾN MÃI CƯỚI CHO THÁNG 7 TƯƠI XANH
+          
+      .col-sm-3.col-md-3
+        a(href="#"): img(src="assets/img/service-detail/more/more_7.png", alt="")
+        a(href="#"): h5.text-uppercase
+          strong SIÊU KHUYẾN MÃI CƯỚI CHO THÁNG 7 TƯƠI XANH
+          
+      .col-sm-3.col-md-3
+        a(href="#"): img(src="assets/img/service-detail/more/more_8.png", alt="")
+        a(href="#"): h5.text-uppercase
+          strong SIÊU KHUYẾN MÃI CƯỚI CHO THÁNG 7 TƯƠI XANH

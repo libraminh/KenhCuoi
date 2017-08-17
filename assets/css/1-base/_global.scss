@@ -1,5 +1,21 @@
 body {
   @include font('Montserrat');
+
+  &::-webkit-scrollbar-track {
+    background: $border-color;
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar {
+    border-radius: 20px;
+    background: $accent-color;
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $accent-color;
+    border-radius: 5px;
+  }
 }
 
 a {
@@ -12,16 +28,40 @@ p {
   margin: 0;
 }
 
+input {
+  box-shadow: none;
+
+  &:focus {
+    box-shadow: none !important;
+    border-color: #ccc !important;
+  }
+}
+
+.open-header {
+  .header-navbar {
+    // overflow: hidden;
+    border-bottom: 1px solid $border-color !important;
+  }
+}
+
+.mm-slideout {
+  z-index: auto !important;
+}
+
 .home-wrap {
   overflow: hidden;
 }
 
 .text-accent {
-  color: $accent-color;
+  color: $accent-color !important;
 }
 
 .text-primary {
   color: $primary-color;
+}
+
+.text-grey {
+  color: #a9a9a9;
 }
 
 .margin-box {
@@ -40,12 +80,63 @@ p {
   margin: 30px 0;
 }
 
+.margin-box-5 {
+  margin: 50px 0;
+}
+
 .padding-off {
   padding: 0 10px !important;
 }
 
 .padding-off-1 {
   padding: 0 5px !important;
+}
+
+.margin-off {
+  margin: 0 !important;
+}
+
+.text-indent {
+  text-indent: 2.5em;
+}
+
+.divine-accent {
+  background: $accent-color;
+}
+
+.account-info-page {
+  background: #f6f6f6;
+}
+
+.account-info-page, .account-album-page, .account-manage-album-page,
+.account-manage-promotion-page, .account-price-list-page, .account-promotion-page,
+.account-page, .password-change-page {
+  .breadcrumb-wrap {
+    margin-bottom: 0;
+  }
+
+  .home-sections {
+    background: #f6f6f6;
+  }
+
+  .account-main-content, .account-main-pic {
+    background: $white-color;
+    border: 1px solid #d7d7d7;
+  }
+
+  .footer {
+    margin: 0;
+  }
+}
+
+.home-carousel {
+  margin-top: 110px;
+}
+
+.index-page {
+  .home-carousel {
+    margin-top: 195px;
+  }
 }
 
 // Box Title
@@ -95,28 +186,35 @@ p {
 
 // Show All Button
 .show-all {
+
   h5 {
+    width: 100%;
+    margin: .7em auto;
     overflow: hidden;
-    color: $text-color4 !important;
+    text-align: center;
+    color: #797071;
+
+    &:hover {
+      color: $accent-color !important;
+    }
 
     &:after, &:before {
-      content:"";
+      content: "";
       display: inline-block;
-      height: 0.5em;
-      vertical-align: bottom;
-      width: 100%;
-      border-top: 1px solid $border-color;
+      width: 50%;
+      margin: 0 .5em 0 -55%;
+      vertical-align: middle;
+      border-bottom: 1px solid $border-color;
     }
 
     &:after {
-      margin-right: -100%;
-      margin-left: 30px;
+      margin: 0 -55% 0 .5em;
     }
 
-    &:before {
-      margin-right: 30px;
-      width: 42%;
-    }
+    // &:before {
+    //   right: 0;
+    //   display: none;
+    // }
   }
 }
 
@@ -143,7 +241,39 @@ p {
 
     strong {
       float: right;
+      @include hoverColor($accent-color);
     }
 
+  }
+}
+
+
+// Social
+.footer-social {
+  li {
+    @extend %display-inline;
+  }
+
+  a {
+    color: $white-color;
+    font-size: 20px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: $social-bg;
+    border-radius: 50%;
+    position: relative;
+    transition: all .2s ease-in-out;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:hover {
+      background: $accent-color;
+    }
   }
 }

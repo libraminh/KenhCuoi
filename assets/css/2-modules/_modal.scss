@@ -1,0 +1,88 @@
+#service-detail-modal {
+  .modal-dialog {
+    margin: 100px auto;
+  }
+
+  .modal-content {
+    border-radius: 0;
+    border: none;
+  }
+
+  .modal-header {
+    position: relative;
+    padding: 25px 0;
+  }
+
+  .modal-body {
+    background: #fce9ec;
+    border-top: 5px solid #ee92a1;
+    border-bottom: 5px solid #ee92a1;
+    padding: 30px;
+  }
+
+  label {
+    color: #e34963;
+  }
+
+  input, textarea {
+    background: #f9d5da;
+    border: none;
+    border-radius: 0;
+    color: #e5546c;
+  }
+
+  input {
+    &::-webkit-inner-spin-button {
+      display: none !important;
+    }
+
+    &::-webkit-calendar-picker-indicator {
+      opacity: 1 !important;
+    }
+  }
+
+  .modal-footer {
+    position: relative;
+  }
+
+
+  .btn-accent {
+    display: block;
+    margin: 0 auto;
+    width: 180px;
+  }
+
+  button.close {
+    float: none;
+    position: absolute;
+    top: -5%;
+    right: 3%;
+    font-weight: normal;
+    opacity: 1;
+
+    span {
+      color: #e86d82;
+      font-size: 80px;
+    }
+  }
+
+  .modal-lace {
+    position: absolute;
+    top: -28px;
+    left: 0;
+    width: 100%;
+  }
+
+  .modal-lace-footer {
+    position: absolute;
+    left: 0;
+    bottom: -28px;
+    width: 100%;
+    transform: rotateX(180deg);
+  }
+}
+@media (max-width: 593px) {
+  .modal-lace, .modal-lace-footer {
+    display: none;
+  }
+}

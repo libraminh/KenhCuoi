@@ -8,9 +8,9 @@
     <link href="//fonts.googleapis.com/css?family=Montserrat:400,600&amp;subset=vietnamese" rel="stylesheet">
     <link type="text/css" href="assets/css/0-tools/mmenu/jquery.mmenu.all.css" rel="stylesheet">
   </head>
-  <body class="home-page">
+  <body class="index-page">
     <div class="home-wrap">
-      <header class="header">
+      <header class="header" id="header">
         <section class="header-info">
           <div class="wrap-header-info">
             <div class="container">
@@ -49,17 +49,47 @@
                 <div class="col-md-5">
                   <nav id="menu">
                     <ul class="header-navbar-left list-unstyled text-uppercase">
-                      <li><a href="#">Trang Chủ</a></li>
-                      <li><a href="#">DỊCH VỤ</a></li>
-                      <li><a href="#">KHUYẾN MÃI
-                          <ul class="header-navbar-left-sub list-unstyled text-uppercase">
-                            <li><a href="#">Trang Chủ</a></li>
-                            <li><a href="#">DỊCH VỤ</a></li>
-                            <li><a href="#">KHUYẾN MÃI</a></li>
+                      <li><a href="index.html">Trang Chủ</a></li>
+                      <li><a href="service.html">DỊCH VỤ
+                          <ul class="header-navbar-left-sub list-unstyled">
+                            <li><a href="service.html"><img class="icon-nav" src="assets/img/home/service/nhahangtieccuoi.svg" alt="">Nhà hàng tiệc cưới</a></li>
+                            <li><a href="promotion.html"><img class="icon-nav" src="assets/img/home/service/studio.svg" alt="">Studio</a></li>
+                            <li><a href="index.html"><img class="icon-nav" src="assets/img/home/service/nhancuoi.svg" alt="">Trang sức cưới</a></li>
+                            <li><a href="service.html"><img class="icon-nav" src="assets/img/home/service/thiepcuoi.svg" alt="">Thiệp cưới</a></li>
+                            <li><a href="promotion.html"><img class="icon-nav" src="assets/img/home/service/weddingplanner.svg" alt="">Wedding planner</a></li>
+                            <li><a href="index.html"><img class="icon-nav" src="assets/img/home/service/trangmat.svg" alt="">Trăng mật</a></li>
+                            <li><a href="promotion.html"><img class="icon-nav" src="assets/img/home/service/quacuoi.svg" alt="">Quà cưới</a></li>
+                            <li><a href="index.html"><img class="icon-nav" src="assets/img/home/service/hoacuoi.svg" alt="">Hoa cưới</a></li>
                           </ul></a></li>
-                      <li><a href="#">VIDEO </a></li>
-                      <li><a class="hidden-md hidden-lg" href="#">Ý Tưởng Cưới</a></li>
-                      <li><a class="hidden-md hidden-lg" href="#">BỘ SƯU TẬP</a></li>
+                      <li><a href="promotion.html">KHUYẾN MÃI</a></li>
+                      <li><a href="video.html">VIDEO </a></li>
+                      <li><a class="hidden-md hidden-lg" href="post-list1.html">Ý Tưởng Cưới
+                          <ul class="header-navbar-left-sub list-unstyled">
+                            <li><a href="service.html"><img class="icon-nav" src="assets/img/icon/Iconytuongcuoi/cauhon.svg" alt="">Cầu hôn</a></li>
+                            <li><a href="promotion.html"><img class="icon-nav" src="assets/img/icon/Iconytuongcuoi/diadiemcuoi.svg" alt="">Địa điểm cưới</a></li>
+                            <li><a href="index.html"><img class="icon-nav" src="assets/img/icon/Iconytuongcuoi/ngansach.svg" alt="">Ngân sách</a></li>
+                            <li><a href="service.html"><img class="icon-nav" src="assets/img/icon/Iconytuongcuoi/chuphinh.svg" alt="">Chụp hình cưới</a></li>
+                            <li><a href="promotion.html"><img class="icon-nav" src="assets/img/icon/Iconytuongcuoi/nghithuc.svg" alt="">Nghi thức</a></li>
+                            <li><a href="index.html"><img class="icon-nav" src="assets/img/icon/Iconytuongcuoi/toccuoi.svg" alt="">Tóc cưới</a></li>
+                            <li><a href="service.html"><img class="icon-nav" src="assets/img/icon/Iconytuongcuoi/trangtri.svg" alt="">Trang trí</a></li>
+                            <li><a href="promotion.html"><img class="icon-nav" src="assets/img/icon/Iconytuongcuoi/trangmat.svg" alt="">Trăng mật</a></li>
+                            <li><a href="index.html"><img class="icon-nav" src="assets/img/icon/Iconytuongcuoi/xuhuongcuoi.svg" alt="">Xu hướng cưới</a></li>
+                            <li><a href="service.html"><img class="icon-nav" src="assets/img/icon/Iconytuongcuoi/quacuoi.svg" alt="">Quà cưới cảm ơn</a></li>
+                          </ul></a></li>
+                      <li><a class="hidden-md hidden-lg" href="collection.html">BỘ SƯU TẬP
+                          <ul class="header-navbar-left-sub list-unstyled">
+                            <li><a href="service.html"><img class="icon-nav" src="assets/img/icon/nhancuoi-bosuutap.svg" alt="">Nhẫn cưới</a></li>
+                            <li><a href="promotion.html"><img class="icon-nav" src="assets/img/icon/phukiencuoi.svg" alt="">Phụ kiện cưới</a></li>
+                            <li><a href="index.html"><img class="icon-nav" src="assets/img/icon/ao vest.svg" alt="">Áo vest</a></li>
+                            <li><a href="service.html"><img class="icon-nav" src="assets/img/icon/aodai2.svg" alt="">Áo dài cưới</a></li>
+                            <li><a href="promotion.html"><img class="icon-nav" src="assets/img/icon/vaychua.svg" alt="">Váy chữ A</a></li>
+                            <li><a href="index.html"><img class="icon-nav" src="assets/img/icon/vayxoe.svg" alt="">Váy xòe</a></li>
+                            <li><a href="service.html"><img class="icon-nav" src="assets/img/icon/vaycupnguc.svg" alt="">Váy cúp ngực</a></li>
+                            <li><a href="promotion.html"><img class="icon-nav" src="assets/img/icon/vayduoica.svg" alt="">Váy đuôi cá</a></li>
+                            <li><a href="index.html"><img class="icon-nav" src="assets/img/icon/lechvai.svg" alt="">Váy lệch vai</a></li>
+                            <li><a href="service.html"><img class="icon-nav" src="assets/img/icon/vayngan.svg" alt="">Váy ngắn</a></li>
+                            <li><a href="promotion.html"><img class="icon-nav" src="assets/img/icon/vayphudau.svg" alt="">Váy phụ dâu</a></li>
+                          </ul></a></li>
                       <li><a class="hidden-md hidden-lg" href="#">KÊNH QUÀ TẶNG</a></li>
                     </ul>
                   </nav>
@@ -69,12 +99,37 @@
                 </div>
                 <div class="col-md-5">
                   <ul class="header-navbar-left list-unstyled text-uppercase">
-                    <li class="hidden-xs hidden-sm"><a href="#">Ý Tưởng Cưới</a></li>
-                    <li class="hidden-xs hidden-sm"><a href="#">BỘ SƯU TẬP</a></li>
+                    <li class="hidden-xs hidden-sm"><a href="post-list1.html">Ý Tưởng Cưới
+                        <ul class="header-navbar-left-sub list-unstyled">
+                          <li><a href="service.html"><img class="icon-nav" src="assets/img/icon/Iconytuongcuoi/cauhon.svg" alt="">Cầu hôn</a></li>
+                          <li><a href="promotion.html"><img class="icon-nav" src="assets/img/icon/Iconytuongcuoi/diadiemcuoi.svg" alt="">Địa điểm cưới</a></li>
+                          <li><a href="index.html"><img class="icon-nav" src="assets/img/icon/Iconytuongcuoi/ngansach.svg" alt="">Ngân sách</a></li>
+                          <li><a href="service.html"><img class="icon-nav" src="assets/img/icon/Iconytuongcuoi/chuphinh.svg" alt="">Chụp hình cưới</a></li>
+                          <li><a href="promotion.html"><img class="icon-nav" src="assets/img/icon/Iconytuongcuoi/nghithuc.svg" alt="">Nghi thức</a></li>
+                          <li><a href="index.html"><img class="icon-nav" src="assets/img/icon/Iconytuongcuoi/toccuoi.svg" alt="">Tóc cưới</a></li>
+                          <li><a href="service.html"><img class="icon-nav" src="assets/img/icon/Iconytuongcuoi/trangtri.svg" alt="">Trang trí</a></li>
+                          <li><a href="promotion.html"><img class="icon-nav" src="assets/img/icon/Iconytuongcuoi/trangmat.svg" alt="">Trăng mật</a></li>
+                          <li><a href="index.html"><img class="icon-nav" src="assets/img/icon/Iconytuongcuoi/xuhuongcuoi.svg" alt="">Xu hướng cưới</a></li>
+                          <li><a href="service.html"><img class="icon-nav" src="assets/img/icon/Iconytuongcuoi/quacuoi.svg" alt="">Quà cưới cảm ơn</a></li>
+                        </ul></a></li>
+                    <li class="hidden-xs hidden-sm"><a href="collection.html">BỘ SƯU TẬP
+                        <ul class="header-navbar-left-sub list-unstyled">
+                          <li><a href="service.html"><img class="icon-nav" src="assets/img/icon/nhancuoi-bosuutap.svg" alt="">Nhẫn cưới</a></li>
+                          <li><a href="promotion.html"><img class="icon-nav" src="assets/img/icon/phukiencuoi.svg" alt="">Phụ kiện cưới</a></li>
+                          <li><a href="index.html"><img class="icon-nav" src="assets/img/icon/ao vest.svg" alt="">Áo vest</a></li>
+                          <li><a href="service.html"><img class="icon-nav" src="assets/img/icon/aodai2.svg" alt="">Áo dài cưới</a></li>
+                          <li><a href="promotion.html"><img class="icon-nav" src="assets/img/icon/vaychua.svg" alt="">Váy chữ A</a></li>
+                          <li><a href="index.html"><img class="icon-nav" src="assets/img/icon/vayxoe.svg" alt="">Váy xòe</a></li>
+                          <li><a href="service.html"><img class="icon-nav" src="assets/img/icon/vaycupnguc.svg" alt="">Váy cúp ngực</a></li>
+                          <li><a href="promotion.html"><img class="icon-nav" src="assets/img/icon/vayduoica.svg" alt="">Váy đuôi cá</a></li>
+                          <li><a href="index.html"><img class="icon-nav" src="assets/img/icon/lechvai.svg" alt="">Váy lệch vai</a></li>
+                          <li><a href="service.html"><img class="icon-nav" src="assets/img/icon/vayngan.svg" alt="">Váy ngắn</a></li>
+                          <li><a href="promotion.html"><img class="icon-nav" src="assets/img/icon/vayphudau.svg" alt="">Váy phụ dâu</a></li>
+                        </ul></a></li>
                     <li class="hidden-xs hidden-sm"><a href="#">Cộng đồng
                         <ul class="header-navbar-left-sub list-unstyled text-uppercase">
-                          <li><a href="#">Góc chia sẻ</a></li>
-                          <li><a href="#">Ảnh cưới đẹp</a></li>
+                          <li><a href="share.html">Góc chia sẻ</a></li>
+                          <li><a href="beauty-pic.html">Ảnh cưới đẹp</a></li>
                         </ul></a></li>
                     <li class="hidden-md hidden-lg">
                       <button class="hamburger hamburger--collapse mm-slideout" id="mm-open-menu" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
@@ -87,7 +142,7 @@
         </section>
       </header>
       <section class="home-carousel">
-        <div class="home-carousel-wrap"><img class="lace" src="assets/img/home/ren.svg" alt=""><img class="lace lace-bottom" src="assets/img/home/ren.svg" alt="">
+        <div class="home-carousel-wrap"><img class="lace" src="assets/img/home/ren4.svg" alt=""><img class="lace lace-bottom" src="assets/img/home/ren.svg" alt="">
           <div class="owl-carousel owl-theme home-carousel-wrap-carousel">
             <div class="item"><img src="assets/img/home/home-carousel.png" alt="">
               <div class="home-carousel-wrap-carousel-title"><a class="text-uppercase" href="#"><strong>CẦN GÌ ĐI ĐÂU XA, NGAY SÀI GÒN CŨNG CÓ ĐỊA ĐIỂM TỔ CHỨC CƯỚI ĐẸP NHƯ NGÔN TÌNH</strong></a></div>
@@ -106,7 +161,7 @@
           <div class="row">
             <div class="col-md-12 home-search-wrap">
               <div class="col-md-3 col">
-                <h4 class="home-search-wrap-title">TÌM KIẾM <strong class="text-accent">NHÀ CUNG CẤP</strong></h4>
+                <h4 class="home-search-wrap-title text-accent">TÌM KIẾM <strong>NHÀ CUNG CẤP</strong></h4>
               </div>
               <div class="col-md-3 col">
                 <form>
@@ -194,46 +249,62 @@
                 <div class="margin-box"></div>
                 <div class="row">
                   <div class="col-xs-12 col-sm-6 col-md-3 padding-off"><a href="#">
-                      <div class="home-service-wrap"><img class="home-service-thumb" src="assets/img/home/service/service_1.png" alt=""><img class="home-service-lace" src="assets/img/home/service/circle-lace.png" alt=""><img class="home-service-icon" src="assets/img/home/service/hoacuoi.svg" alt="">
+                      <div class="home-service-wrap">
+                        <div class="home-service-wrap-box"><img class="home-service-thumb" src="assets/img/home/service/service_1.png" alt="">
+                          <div class="home-service-overlay"></div>
+                        </div><img class="home-service-lace" src="assets/img/home/service/circle-lace.png" alt=""><img class="home-service-icon hoacuoi-icon" src="assets/img/home/service/hoacuoi.svg" alt="">
                         <h4 class="text-uppercase">HOA CƯỚI</h4>
-                        <div class="home-service-overlay"></div>
                       </div></a></div>
                   <div class="col-xs-12 col-sm-6 col-md-3 padding-off"><a href="#">
-                      <div class="home-service-wrap"><img class="home-service-thumb" src="assets/img/home/service/service_2.png" alt=""><img class="home-service-lace" src="assets/img/home/service/circle-lace.png" alt=""><img class="home-service-icon" src="assets/img/home/service/nhahangtieccuoi.svg" alt="">
+                      <div class="home-service-wrap">
+                        <div class="home-service-wrap-box"><img class="home-service-thumb" src="assets/img/home/service/service_2.png" alt="">
+                          <div class="home-service-overlay"></div>
+                        </div><img class="home-service-lace" src="assets/img/home/service/circle-lace.png" alt=""><img class="home-service-icon" src="assets/img/home/service/nhahangtieccuoi.svg" alt="">
                         <h4 class="text-uppercase">nhà hàng tiệc cưới</h4>
-                        <div class="home-service-overlay"></div>
                       </div></a></div>
                   <div class="col-xs-12 col-sm-6 col-md-3 padding-off"><a href="#">
-                      <div class="home-service-wrap"><img class="home-service-thumb" src="assets/img/home/service/service_3.png" alt=""><img class="home-service-lace" src="assets/img/home/service/circle-lace.png" alt=""><img class="home-service-icon" src="assets/img/home/service/quacuoi.svg" alt="">
+                      <div class="home-service-wrap">
+                        <div class="home-service-wrap-box"><img class="home-service-thumb" src="assets/img/home/service/service_3.png" alt="">
+                          <div class="home-service-overlay"></div>
+                        </div><img class="home-service-lace" src="assets/img/home/service/circle-lace.png" alt=""><img class="home-service-icon" src="assets/img/home/service/quacuoi.svg" alt="">
                         <h4 class="text-uppercase">QUÀ CƯỚI</h4>
-                        <div class="home-service-overlay"></div>
                       </div></a></div>
                   <div class="col-xs-12 col-sm-6 col-md-3 padding-off"><a href="#">
-                      <div class="home-service-wrap"><img class="home-service-thumb" src="assets/img/home/service/service_4.png" alt=""><img class="home-service-lace" src="assets/img/home/service/circle-lace.png" alt=""><img class="home-service-icon" src="assets/img/home/service/studio.svg" alt="">
+                      <div class="home-service-wrap">
+                        <div class="home-service-wrap-box"><img class="home-service-thumb" src="assets/img/home/service/service_4.png" alt="">
+                          <div class="home-service-overlay"></div>
+                        </div><img class="home-service-lace" src="assets/img/home/service/circle-lace.png" alt=""><img class="home-service-icon" src="assets/img/home/service/studio.svg" alt="">
                         <h4 class="text-uppercase">STUDIO ẢNH CƯỚI</h4>
-                        <div class="home-service-overlay"></div>
                       </div></a></div>
                 </div>
                 <div class="row">
                   <div class="col-xs-12 col-sm-6 col-md-3 padding-off"><a href="#">
-                      <div class="home-service-wrap"><img class="home-service-thumb" src="assets/img/home/service/service_5.png" alt=""><img class="home-service-lace" src="assets/img/home/service/circle-lace.png" alt=""><img class="home-service-icon" src="assets/img/home/service/thiepcuoi.svg" alt="">
+                      <div class="home-service-wrap">
+                        <div class="home-service-wrap-box"><img class="home-service-thumb" src="assets/img/home/service/service_5.png" alt="">
+                          <div class="home-service-overlay"></div>
+                        </div><img class="home-service-lace" src="assets/img/home/service/circle-lace.png" alt=""><img class="home-service-icon" src="assets/img/home/service/thiepcuoi.svg" alt="">
                         <h4 class="text-uppercase">THIỆP CƯỚI</h4>
-                        <div class="home-service-overlay"></div>
                       </div></a></div>
                   <div class="col-xs-12 col-sm-6 col-md-3 padding-off"><a href="#">
-                      <div class="home-service-wrap"><img class="home-service-thumb" src="assets/img/home/service/service_6.png" alt=""><img class="home-service-lace" src="assets/img/home/service/circle-lace.png" alt=""><img class="home-service-icon" src="assets/img/home/service/trangmat.svg" alt="">
+                      <div class="home-service-wrap">
+                        <div class="home-service-wrap-box"><img class="home-service-thumb" src="assets/img/home/service/service_6.png" alt="">
+                          <div class="home-service-overlay"></div>
+                        </div><img class="home-service-lace" src="assets/img/home/service/circle-lace.png" alt=""><img class="home-service-icon" src="assets/img/home/service/trangmat.svg" alt="">
                         <h4 class="text-uppercase">TRĂNG MẬT</h4>
-                        <div class="home-service-overlay"></div>
                       </div></a></div>
                   <div class="col-xs-12 col-sm-6 col-md-3 padding-off"><a href="#">
-                      <div class="home-service-wrap"><img class="home-service-thumb" src="assets/img/home/service/service_7.png" alt=""><img class="home-service-lace" src="assets/img/home/service/circle-lace.png" alt=""><img class="home-service-icon" src="assets/img/home/service/nhancuoi.svg" alt="">
+                      <div class="home-service-wrap">
+                        <div class="home-service-wrap-box"><img class="home-service-thumb" src="assets/img/home/service/service_7.png" alt="">
+                          <div class="home-service-overlay"></div>
+                        </div><img class="home-service-lace" src="assets/img/home/service/circle-lace.png" alt=""><img class="home-service-icon" src="assets/img/home/service/nhancuoi.svg" alt="">
                         <h4 class="text-uppercase">TRANG SỨC CƯỚI</h4>
-                        <div class="home-service-overlay"></div>
                       </div></a></div>
                   <div class="col-xs-12 col-sm-6 col-md-3 padding-off"><a href="#">
-                      <div class="home-service-wrap"><img class="home-service-thumb" src="assets/img/home/service/service_8.png" alt=""><img class="home-service-lace" src="assets/img/home/service/circle-lace.png" alt=""><img class="home-service-icon" src="assets/img/home/service/weddingplanner.svg" alt="">
+                      <div class="home-service-wrap">
+                        <div class="home-service-wrap-box"><img class="home-service-thumb" src="assets/img/home/service/service_8.png" alt="">
+                          <div class="home-service-overlay"></div>
+                        </div><img class="home-service-lace" src="assets/img/home/service/circle-lace.png" alt=""><img class="home-service-icon" src="assets/img/home/service/weddingplanner.svg" alt="">
                         <h4 class="text-uppercase">WEDDING PLANNER</h4>
-                        <div class="home-service-overlay"></div>
                       </div></a></div>
                 </div>
                 <div class="margin-box"></div><a href="#"><img class="home-showcase-thumb" src="assets/img/home/showcase/just-marry.png" alt=""></a>
@@ -269,7 +340,7 @@
                     <h5 class="text-uppercase"><strong>Xem Tất Cả</strong></h5></a></div>
               </section>
               <div class="margin-box"></div>
-              <section class="home-idea">
+              <section class="home-idea home-collection">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="box-title">
@@ -284,10 +355,10 @@
                         <li><a href="#">Kiểu Khác</a></li>
                         <li><a class="dropdown-toggle" href="#" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Xem Thêm <i class="fa fa-angle-down" aria-hidden="true"></i>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                              <li><a href="#">Action</a></li>
-                              <li><a href="#">Another action</a></li>
-                              <li><a href="#">Something else here</a></li>
-                              <li><a href="#">Separated link</a></li>
+                              <li><a href="#">Kiểu Khác</a></li>
+                              <li><a href="#">Áo Vest</a></li>
+                              <li><a href="#">Áo Dài Cưới</a></li>
+                              <li><a href="#">Áo Vest</a></li>
                             </ul></a></li>
                       </ul>
                     </nav>
@@ -353,13 +424,13 @@
                         <li><a href="#">Cầu Hôn</a></li>
                         <li><a href="#">Chụp Hình</a></li>
                         <li><a href="#">Địa Điểm Cưới</a></li>
-                        <li><a class="dropdown-toggle" href="#" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Xem Thêm <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        <li><a class="dropdown-toggle" href="#" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Xem Thêm 
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                              <li><a href="#">Action</a></li>
-                              <li><a href="#">Another action</a></li>
-                              <li><a href="#">Something else here</a></li>
-                              <li><a href="#">Separated link</a></li>
-                            </ul></a></li>
+                              <li><a href="#">Địa Điểm Cưới</a></li>
+                              <li><a href="#">Chụp Hình</a></li>
+                              <li><a href="#">Cầu Hôn</a></li>
+                              <li><a href="#">Chụp Hình</a></li>
+                            </ul><i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
                       </ul>
                     </nav>
                   </div>
@@ -667,9 +738,7 @@
         </div>
       </div>
       <footer class="footer">
-        <div class="margin-box"></div>
         <div class="container">
-          <div class="margin-box"></div>
           <div class="row">
             <div class="col-sm-4 col-md-4">
               <h3 class="text-uppercase">THÔNG TIN LIÊN HỆ</h3>
@@ -768,7 +837,6 @@
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/jquery.countdown.min.js"></script>
     <script src="assets/js/bootstrap-select.js"></script>
-    <script src="assets/js/jquery.amlich.js"></script>
     <script src="assets/js/functions.js"></script>
   </body>
 </html>

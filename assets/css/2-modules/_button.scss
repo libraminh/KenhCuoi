@@ -14,6 +14,49 @@
   }
 }
 
+.btn-accent-1 {
+  background: $accent-color;
+  border-radius: 0;
+  border: 8px solid $primary-color;
+  padding: 10px 15px;
+  color: $white-color;
+  font-size: 12px;
+  @extend  %font-weight;
+  transition: all .1s ease-in-out;
+
+  &:hover {
+    color: $white-color;
+    background: lighten($accent-color, 8%);
+  }
+}
+
+.btn-register {
+  background: #3b5998;
+  border-radius: 0;
+  padding: 10px 30px;
+  color: $white-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    color: $white-color;
+  }
+
+  i {
+    margin-right: 15px;
+    font-size: 20px;
+  }
+}
+
+.btn-grey {
+  background: #f3f3f3;
+  border-radius: 0;
+  padding: 10px 15px;
+  color: $text-color;
+  @extend %font-weight;
+}
+
 // Button Tag
 .btn-tag {
   background: $tag-bg;

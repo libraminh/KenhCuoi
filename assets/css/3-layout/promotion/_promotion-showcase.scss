@@ -1,0 +1,32 @@
+.promotion-showcase {
+  .post-list-content {
+    margin-bottom: 20px;
+
+    img {
+      width: 100%;
+    }
+
+    .post-list-wrap {
+      position: relative;
+    }
+
+    .media-heading {
+      font-size: 15px;
+      color: $text-color;
+      margin-top: 15px;
+      line-height: 1.4;
+      @include hoverColor($accent-color);
+    }
+
+    .home-showcase-date {
+      color: $accent-color;
+      @extend %font-weight;
+    }
+
+    .showcase-address {
+      color: $text-color2;
+      @extend %font-weight;
+    }
+  }
+
+}

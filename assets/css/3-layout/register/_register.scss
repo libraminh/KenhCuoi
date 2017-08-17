@@ -1,0 +1,29 @@
+.register-showcase {
+  &-wrap {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  &-wrap-form {
+    .form-group {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    label {
+      margin-top: 10px;
+    }
+
+    input {
+      border-radius: 0;
+      box-shadow: none;
+      padding: 20px 15px;
+
+      &:focus {
+        box-shadow: none;
+        border-color: #ccc;
+      }
+    }
+  }
+}

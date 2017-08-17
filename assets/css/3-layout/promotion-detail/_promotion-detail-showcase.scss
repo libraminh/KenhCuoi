@@ -1,0 +1,44 @@
+.promotion-detail {
+  &-info {
+    border-bottom: 1px solid $border-color;
+    padding: 17px 0;
+
+    .btn-accent-1 {
+      padding: 12px 15px;
+      margin-top: 3px;
+    }
+
+    .media-left {
+      padding-right: 25px;
+    }
+
+    .media-body {
+      i {
+        margin-right: 5px;
+      }
+
+      span {
+        color: $text-color4;
+      }
+    }
+  }
+
+  .post-video-showcase-metadata {
+    display: flex;
+    justify-content: space-between;
+
+    .text-accent {
+      display: inline;
+    }
+  }
+
+  .post-video-showcase-morelink {
+    margin: 15px 0;
+  }
+
+  .post-video-showcase-content {
+    p {
+      margin: 20px 0;
+    }
+  }
+}

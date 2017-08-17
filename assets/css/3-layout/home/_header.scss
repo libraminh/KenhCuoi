@@ -1,4 +1,10 @@
 // Section Header Info
+#header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
 .header-info {
   .wrap-header-info {
     background: $navbar-bg;
@@ -63,10 +69,10 @@
 }
 
 // Section Header Navbar
-.mm-panel {
-  // padding: 40px 0 0 !important;
-}
+
 .header-navbar {
+  background: $white-color;
+
   .wrap-header-navbar {
     box-shadow: inset 0 1px 0px 1px rgba(black,0.15);
   }
@@ -81,7 +87,6 @@
         border: none;
       }
     }
-
   }
 
   &-brand {
@@ -106,11 +111,15 @@
       .small-logo {
         width: 50%;
         position: absolute;
-        top: 7px;
+        top: 12px;
         left: 45px;
         z-index: 2;
       }
     }
   }
+}
 
+.icon-nav {
+  width: 6%;
+  margin-right: 10px;
 }

@@ -1,0 +1,10 @@
+@media (max-width: $screen-xs-max) {
+  .media-nav {
+    justify-content: center !important;
+    flex-direction: column;
+  }
+
+  .list-unstyled {
+    margin: 0;
+  }
+}

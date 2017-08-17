@@ -1,6 +1,8 @@
 .home-search {
   padding: 20px 0;
-  border-bottom: 7px solid $accent-color;
+  border-bottom: 5px solid $accent-color;
+  background: $white-color;
+
   &-wrap {
 
     .col {
@@ -9,7 +11,36 @@
 
     input, .dropdown-toggle {
       border-radius: 0;
+      border: none;
+      box-shadow: none;
+      background: $input-bg;
+
+      &:focus {
+        box-shadow: none;
+      }
+
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: $text-color4;
+      }
+      &::-moz-placeholder { /* Firefox 19+ */
+        color: $text-color4;
+      }
+      &:-ms-input-placeholder { /* IE 10+ */
+        color: $text-color4;
+      }
+      &:-moz-placeholder { /* Firefox 18- */
+        color: $text-color4;
+      }
     }
+
+    .filter-option {
+      color: $text-color4;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
   }
 
   .btn-accent {

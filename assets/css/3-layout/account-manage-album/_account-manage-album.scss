@@ -1,0 +1,27 @@
+.account-manage-album {
+  .btn-grey {
+    margin-right: 10px;
+  }
+
+  .btn-accent {
+    padding: 10px 20px;
+  }
+
+  &-primary-nav {
+    li {
+      padding: 15px 0px;
+      border-bottom: 1px solid $border-color;
+
+      &:last-child {
+        border: none;
+      }
+
+      .row {
+        padding: 0 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

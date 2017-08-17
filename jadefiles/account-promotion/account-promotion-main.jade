@@ -1,0 +1,53 @@
+section.account-album.account-promotion.margin-box-5
+  .account-main-content.account-main-albumn
+    .account-main-content-header
+      h3.text-uppercase.text-accent.text-center
+        strong ĐĂNG TIN KHUYẾN MÃI
+    .account-main-content-primary.account-main-albumn-primary
+      .row
+        form
+          .col-md-12
+            .form-group
+              label Tiêu đề
+              input.form-control(type="text" placeholder="Tháng vàng ngập tràn ưu đãi") 
+              
+      label Ảnh đại diện album ảnh
+      .clearfix
+      a.btn.btn-accent.text-uppercase(href="#") Chọn File  
+      .clearfix.visible-xs.visible-sm
+      .margin-box-1.visible-xs.visible-sm
+      span.text-grey ( Không có file nào được chọn )
+      
+      .margin-box-1
+      img.album-thumb(src="assets/img/account/album.png", alt="")
+      
+      .margin-box-3
+      .account-promotion-form
+        .row  
+          .col-md-6    
+            .form-group
+              label Thời gian diễn ra khuyến mãi
+              input.form-control.form-date-1(type="type" placeholder="Chọn ngày bắt đầu" onfocus="(this.type='date')")
+              .margin-box-1
+              input.form-control.form-date-2(type="type" placeholder="Chọn ngày kết thúc" onfocus="(this.type='date')")
+                
+            .form-group
+              label Dịch vụ khuyến mãi
+              select.form-control.selectpicker(title="Chọn dịch vụ khuyến mãi")
+                option Mustard
+                |   
+                option Ketchup
+                |   
+                option Relish
+                
+          .col-md-6
+            .form-group
+              label Giới thiệu ngắn
+              textarea.form-control(rows="5" placeholder="Một đám cưới ấn tượng với những dịch vụ cưới cao cấp, sang trọng bậc nhất luôn là điều mơ ước của mỗi cô dâu, và “ Luxury Wedding Day “ chính là nơi biến giấc mơ của bạn thành hiện ")
+              .margin-box-1
+              cite.text-grey Giới thiệu ngắn tốt nhất khoảng 100 từ.
+          
+          .col-md-12
+            .form-group
+              label Nội dung
+              textarea.form-control(rows="12" placeholder="Là một trong những photographer đầu tiên của Việt Nam chụp tại nước ngoài, Lucas đã thực hiện hơn 200 bộ ảnh cưới tuyệt đẹp tại Paris. Sau nhiều năm, Lucas quyết định mở studio ảnh cưới mang tên Mộc Thanh ở quận Phú Nhuận, HCM. ")

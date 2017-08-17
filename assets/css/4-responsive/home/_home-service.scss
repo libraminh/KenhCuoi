@@ -26,10 +26,14 @@
 @media (max-width: $screen-xs-max ) {
   .home-service-thumb {
     width: auto !important;
+    margin: 0 auto;
+  }
+
+  .home-service-wrap-box {
+    position: relative;
   }
 
   .home-service-wrap {
-    // margin-bottom: 25px;
 
   .home-service-overlay {
     bottom: -8px;
@@ -49,5 +53,9 @@
     }
   }
 
+  }
+
+  .home-service-wrap .home-service-icon {
+    width: 7%;
   }
 }

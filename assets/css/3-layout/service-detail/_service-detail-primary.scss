@@ -1,0 +1,149 @@
+.service-detail-primary {
+  &-content {
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 0;
+
+      h4 {
+        display: inline;
+      }
+
+      span.left {
+        h4 {
+          margin-right: 10px;
+        }
+
+        i {
+          color: $white-color;
+          background: #449294;
+          padding: 5px;
+          border-radius: 50%;
+        }
+      }
+
+      span.right {
+        color: $text-color2;
+
+        i {
+          color: #b1c6c9;
+          margin-right: 3px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    &-info {
+      border-top: 1px solid $border-color;
+      padding-top: 20px;
+
+      .media-body {
+        ul {
+          margin: 0;
+        }
+
+        li {
+          margin-bottom: 10px;
+        }
+
+        i {
+          margin-right: 5px;
+        }
+
+        span {
+          color: $text-color2;
+        }
+
+        .footer-social {
+          a {
+            background: #b1c6c9;
+            width: 30px;
+            height: 30px;
+            font-size: 14px;
+          }
+
+          i {
+            margin: 0
+          }
+        }
+      }
+
+      .media-left {
+        padding-right: 25px;
+      }
+    }
+
+    &-list {
+      color: $text-color3;
+
+      & > li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid $border-color;
+
+        &:last-child {
+          border-bottom: 1px solid $border-color;
+        }
+      }
+
+      h4 {
+        font-size: 16px;
+      }
+
+      .breadcrumb-4 {
+        a {
+          font-size: 18px;
+        }
+
+        li.active a {
+          font-size: 15px;
+        }
+      }
+    }
+
+    .btn-accent-1 {
+      padding: 14px 15px;
+    }
+  }
+
+  &-quote {
+    height: 120px;
+    overflow: auto;
+
+    &::-webkit-scrollbar-track {
+      background: $border-color;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar {
+      border-radius: 20px;
+      background: $accent-color;
+      width: 7px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $accent-color;
+      border-radius: 10px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
+
+  &-more {
+    img {
+      width: 100%;
+    }
+    
+    h5 {
+      color: $text-color3;
+      line-height: 1.4;
+      @include hoverColor($accent-color);
+    }
+  }
+}

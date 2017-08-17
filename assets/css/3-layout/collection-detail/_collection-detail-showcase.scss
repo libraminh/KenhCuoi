@@ -1,0 +1,16 @@
+.collection-detail-showcase {
+  .promotion-detail-info {
+    .media-nav {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    li {
+      margin: 5px 0;
+    }
+
+    span {
+      color: $text-color2;
+    }
+  }
+}

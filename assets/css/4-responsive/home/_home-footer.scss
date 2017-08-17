@@ -14,11 +14,26 @@
     .col-md-6:nth-child(2) {
       text-align: center !important;
     }
+
     .footer-copyright {
+      margin-top: 20px;
+
+      .copycat {
+        margin-bottom: 5px;
+      }
+
+      .row {
+        display: block;
+        text-align: center;
+      }
+
       .copyright-nav {
+        text-align: center;
+        
         a {
           font-size: 12px;
           padding-right: 5px !important;
+
         }
       }
     }

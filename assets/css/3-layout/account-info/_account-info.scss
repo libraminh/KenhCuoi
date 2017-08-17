@@ -1,0 +1,23 @@
+.account-info {
+  background: $white-color;
+  
+  &-primary-form {
+    .btn-accent {
+      margin-top: 45px;
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: $screen-sm-max) {
+  .account-info {
+    &-primary-form {
+      .btn-accent {
+        width: 200px;
+        margin: 0 auto;
+        display: block;
+        float: none !important;
+      }
+    }
+  }
+}

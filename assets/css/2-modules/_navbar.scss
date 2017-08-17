@@ -5,6 +5,7 @@
 
     li {
       @extend %display-inline;
+      position: relative;
     }
 
     a {
@@ -16,6 +17,22 @@
 
       &:hover {
         color: $accent-color;
+      }
+    }
+
+    .dropdown-menu {
+
+      li {
+        display: block;
+        padding: 10px;
+      }
+
+      a {
+        padding: 0;
+
+        &:hover {
+          background: none !important;
+        }
       }
     }
   }

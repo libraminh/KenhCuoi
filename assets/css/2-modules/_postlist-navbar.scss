@@ -1,0 +1,38 @@
+.postlist-nav {
+  &-navbar {
+
+    li {
+      padding: 8px 0;
+      border-bottom: 1px solid $border-color;
+
+      &:last-child {
+        border: none;
+      }
+
+      &:hover {
+        a {
+          color: $accent-color;
+        }
+        
+        .post-nav path {
+          fill: $accent-color;
+        }
+      }
+    }
+
+    a {
+      color: $text-color3;
+      display: flex;
+      align-items: center;
+    }
+
+    .post-nav {
+      width: 8%;
+      margin-right: 10px;
+
+      path {
+        fill: $text-color3;
+      }
+    }
+  }
+}

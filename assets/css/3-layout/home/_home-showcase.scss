@@ -23,8 +23,14 @@
   &-title {
     color: $text-color;
 
+
     &:hover {
       color: $accent-color;
+    }
+
+    h3 {
+      font-size: 19px;
+      margin: 20px 0;
     }
   }
 
