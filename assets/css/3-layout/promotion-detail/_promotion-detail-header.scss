@@ -1,0 +1,22 @@
+.promotion-detail-header {
+  .header-popup {
+    border-top: 1px solid $text-color;
+    box-shadow: 0px 3px 5px 1px rgba(#ccc,0.3);
+    padding: 5px 0;
+    background: $white-color;
+
+    &-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    h4 {
+      font-size: 1.1em;
+    }
+
+    .btn-accent {
+      padding: 10px 25px;
+    }
+  }
+}

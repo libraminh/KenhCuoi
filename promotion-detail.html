@@ -10,7 +10,7 @@
   </head>
   <body class="home-page">
     <div class="home-wrap">
-      <header class="header" id="header">
+      <header class="header promotion-detail-header" id="header">
         <section class="header-info">
           <div class="wrap-header-info">
             <div class="container">
@@ -22,7 +22,7 @@
                   <ul class="header-info-navbar text-uppercase list-unstyled">
                     <li><a href="#">Đăng ký nhà cung cấp</a></li>
                     <li><a href="#">Đăng ký</a></li>
-                    <li><a href="#">Đăng nhập</a></li>
+                    <li><a href="account.html">Đăng nhập</a></li>
                     <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
                   </ul>
                 </div>
@@ -128,6 +128,73 @@
             </div>
           </div>
         </section>
+        <section class="header-popup">
+          <div class="container">
+            <div class="header-popup-wrap">
+              <h4 class="text-uppercase"><strong>Chụp Prewedding giảm 50% gói chụp tiệc và quay phim</strong></h4><a class="btn btn-accent text-uppercase" data-toggle="modal" data-target="#service-detail-modal">Nhận Báo Giá</a>
+              <!-- Modal-->
+              <div class="modal fade" id="service-detail-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header"><img class="modal-lace" src="assets/img/ren.png" alt="">
+                      <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>          
+                      <h4 class="modal-title text-uppercase text-accent text-center"><strong>Đăng ký nhận báo giá</strong></h4>
+                    </div>        
+                    <div class="modal-body">
+                      <div class="row">
+                        <form>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label class="text-uppercase">Tên Của Bạn</label>
+                              <input class="form-control" type="text">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label class="text-uppercase">Số Điện Thoại Của Bạn</label>
+                              <input class="form-control" type="tel">
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="row">
+                        <form>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label class="text-uppercase">Email Của Bạn</label>
+                              <input class="form-control" type="email">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label class="text-uppercase">Ngày Cưới Dự Kiến</label>
+                              <input class="form-control" type="date">
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> Chưa xác định ngày cưới
+                        </label>
+                      </div>
+                      <div class="margin-box-2">   </div>
+                      <form>
+                        <div class="form-group">
+                          <label class="text-uppercase">Lời Nhắn</label>
+                          <textarea class="form-control" type="text" rows="3"> </textarea>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-accent text-uppercase" type="button">Gửi</button><img class="modal-lace-footer" src="assets/img/ren.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </header>
       <section class="home-carousel">
         <div class="home-carousel-wrap"><img class="lace-shadow" src="assets/img/home/ren-shadow.png" alt=""><img class="lace-shadow" src="assets/img/home/ren-shadow-bottom.png" alt="">
@@ -214,7 +281,67 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-md-3"><a class="btn btn-accent-1 btn-block text-uppercase" href="#">Nhận Báo Giá</a></div>
+                    <div class="col-md-3"><a class="btn btn-accent-1 btn-block text-uppercase" data-toggle="modal" data-target="#service-detail-modal">Nhận Báo Giá</a></div>
+                    <!-- Modal-->
+                    <div class="modal fade" id="service-detail-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header"><img class="modal-lace" src="assets/img/ren.png" alt="">
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>          
+                            <h4 class="modal-title text-uppercase text-accent text-center"><strong>Đăng ký nhận báo giá</strong></h4>
+                          </div>        
+                          <div class="modal-body">
+                            <div class="row">
+                              <form>
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <label class="text-uppercase">Tên Của Bạn</label>
+                                    <input class="form-control" type="text">
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <label class="text-uppercase">Số Điện Thoại Của Bạn</label>
+                                    <input class="form-control" type="tel">
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                            <div class="row">
+                              <form>
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <label class="text-uppercase">Email Của Bạn</label>
+                                    <input class="form-control" type="email">
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <label class="text-uppercase">Ngày Cưới Dự Kiến</label>
+                                    <input class="form-control" type="date">
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox"> Chưa xác định ngày cưới
+                              </label>
+                            </div>
+                            <div class="margin-box-2">   </div>
+                            <form>
+                              <div class="form-group">
+                                <label class="text-uppercase">Lời Nhắn</label>
+                                <textarea class="form-control" type="text" rows="3"> </textarea>
+                              </div>
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-accent text-uppercase" type="button">Gửi</button><img class="modal-lace-footer" src="assets/img/ren.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="margin-box-1"></div>

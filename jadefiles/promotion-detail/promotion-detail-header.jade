@@ -1,4 +1,4 @@
-header.header#header
+header.header#header.promotion-detail-header
   section.header-info
     .wrap-header-info
       .container
@@ -10,19 +10,9 @@ header.header#header
               li: a(href="#") Đăng ký nhà cung cấp
               li: a(href="#") Đăng ký
               li: a(href="account.html") Đăng nhập
-              li.search-btn: a
-                i.fa.fa-search.search-icon-nav(aria-hidden='true')
-                input.form-control.search-btn-input(type="text")
+              li: a(href="#")
+                i.fa.fa-search(aria-hidden='true')
               
-  section.header-banner
-    .container
-      .row
-        .header-banner-wrap
-          .col-md-3.col-lg-2.header-banner-btn.pull-right
-            a.btn.btn-accent.btn-block.text-uppercase(href="#") ĐĂNG KÝ NHẬN VÉ MỜI
-          .col-md-4.col-lg-3.header-banner-countdown.pull-right
-            #clock
-          
   section.header-navbar
     .wrap-header-navbar
       .container
@@ -210,4 +200,64 @@ header.header#header
                 button#mm-open-menu.hamburger.hamburger--collapse.mm-slideout(type='button')
                   span.hamburger-box
                     span.hamburger-inner
-  
+                      
+  section.header-popup
+    .container
+      .header-popup-wrap
+        h4.text-uppercase
+          strong Chụp Prewedding giảm 50% gói chụp tiệc và quay phim
+          
+        //- a.btn.btn-accent.text-uppercase(href="#") Nhận Báo Giá
+        a.btn.btn-accent.text-uppercase(data-toggle="modal" data-target="#service-detail-modal") Nhận Báo Giá
+        
+        // Modal
+        #service-detail-modal.modal.fade(tabindex='-1', role='dialog' aria-labelledby="myModalLabel")
+          .modal-dialog(role='document')
+            .modal-content
+              .modal-header
+                img.modal-lace(src="assets/img/ren.png", alt="")
+                button.close(type='button', data-dismiss='modal', aria-label='Close')
+                  span(aria-hidden='true') &times;
+                |           
+                h4.modal-title.text-uppercase.text-accent.text-center
+                  strong Đăng ký nhận báo giá
+              |         
+              .modal-body
+                .row
+                  form
+                    .col-md-6
+                      .form-group
+                        label.text-uppercase Tên Của Bạn
+                        input.form-control(type="text") 
+                        
+                    .col-md-6
+                      .form-group
+                        label.text-uppercase Số Điện Thoại Của Bạn
+                        input.form-control(type="tel")  
+                        
+                .row
+                  form
+                    .col-md-6
+                      .form-group
+                        label.text-uppercase Email Của Bạn
+                        input.form-control(type="email") 
+                        
+                    .col-md-6
+                      .form-group
+                        label.text-uppercase Ngày Cưới Dự Kiến
+                        input.form-control(type="date")      
+                        
+                .checkbox
+                  label
+                    input(type='checkbox')
+                    |  Chưa xác định ngày cưới
+                    
+                .margin-box-2    
+                form
+                  .form-group
+                    label.text-uppercase Lời Nhắn
+                    textarea.form-control(type="text" rows="3") 
+                        
+              .modal-footer
+                button.btn.btn-accent.text-uppercase(type='button') Gửi
+                img.modal-lace-footer(src="assets/img/ren.png", alt="")

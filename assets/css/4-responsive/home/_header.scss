@@ -9,6 +9,18 @@
       }
     }
 
+    &-left-sub {
+
+      & > a {
+        display: none !important;
+      }
+
+      a {
+        padding: 0 !important;
+        line-height: 20px !important;
+      }
+    }
+
     &-brand {
       .logo {
         top: 0;

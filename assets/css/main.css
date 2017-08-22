@@ -8,6 +8,7 @@
 @import url(0-tools/font-awesome/css/font-awesome.min.css);
 @import url(0-tools/animate.css);
 @import url(0-tools/amlich/jquery.amlich.css);
+@import url(0-tools/mmenu/jquery.mmenu.bootstrap.css);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -8109,6 +8110,30 @@ img.nhancuoi svg #nhancuoi {
 .header-info .wrap-header-info {
   background: #2d2d2d; }
 
+.header-info .search-btn {
+  cursor: pointer; }
+
+.header-info .search-btn-input {
+  font-size: 1em;
+  display: none;
+  width: auto !important;
+  padding: 10px !important;
+  border-radius: 0 !important;
+  -webkit-animation: inputAnimate 1s ease-in-out forwards;
+  animation: inputAnimate 1s ease-in-out forwards; }
+
+@-webkit-keyframes inputAnimate {
+  0% {
+    width: 0%; }
+  100% {
+    width: 100%; } }
+
+@keyframes inputAnimate {
+  0% {
+    width: 0%; }
+  100% {
+    width: 100%; } }
+
 .header-info p {
   color: #ffffff;
   margin-top: 13px;
@@ -8798,6 +8823,30 @@ img.nhancuoi svg #nhancuoi {
 .promotion-detail .post-video-showcase-content p {
   margin: 20px 0; }
 
+.promotion-detail-header .header-popup {
+  border-top: 1px solid #303030;
+  -webkit-box-shadow: 0px 3px 5px 1px rgba(204, 204, 204, 0.3);
+  box-shadow: 0px 3px 5px 1px rgba(204, 204, 204, 0.3);
+  padding: 5px 0;
+  background: #ffffff; }
+  .promotion-detail-header .header-popup-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .promotion-detail-header .header-popup h4 {
+    font-size: 1.1em; }
+  .promotion-detail-header .header-popup .btn-accent {
+    padding: 10px 25px; }
+
 .service-showcase .post-list-wrap .breadcrumb-4 a {
   font-size: 15px; }
 
@@ -9216,6 +9265,11 @@ img.nhancuoi svg #nhancuoi {
     .header-navbar-left a {
       padding: 9px !important;
       line-height: 40px !important; }
+  .header-navbar-left-sub > a {
+    display: none !important; }
+  .header-navbar-left-sub a {
+    padding: 0 !important;
+    line-height: 20px !important; }
   .header-navbar-brand .logo {
     top: 0; }
   .header-navbar-brand .small-logo {
@@ -9443,6 +9497,20 @@ img.nhancuoi svg #nhancuoi {
     flex-direction: column; }
   .list-unstyled {
     margin: 0; } }
+
+@media (max-width: 767px) {
+  .promotion-detail-header .header-popup-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .promotion-detail-header .header-popup-wrap h4 {
+      text-align: center; } }
 
 @media (max-width: 767px) {
   .account-price-list-primary .btn-grey {

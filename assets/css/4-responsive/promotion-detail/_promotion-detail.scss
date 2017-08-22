@@ -1,0 +1,12 @@
+@media (max-width: $screen-xs-max) {
+  .promotion-detail-header {
+    .header-popup-wrap {
+      flex-direction: column;
+      justify-content: center;
+
+      h4 {
+        text-align: center;
+      }
+    }
+  }
+}

@@ -10,6 +10,28 @@
     background: $navbar-bg;
   }
 
+  .search-btn {
+    cursor: pointer;
+  }
+
+  .search-btn-input {
+    font-size: 1em;
+    display: none;
+    width: auto !important;
+    padding: 10px !important;
+    border-radius: 0 !important;
+    animation: inputAnimate 1s ease-in-out forwards;
+
+    @keyframes inputAnimate {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+  }
+
   p {
     color: $white-color;
     margin-top: 13px;

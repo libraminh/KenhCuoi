@@ -8,6 +8,7 @@ $icon-font-path: '0-tools/bootstrap/assets/fonts/bootstrap/';
 @import "0-tools/owl-carousel/owl.carousel";
 @import "0-tools/owl-carousel/owl.theme.default";
 @import "0-tools/hamburgers/hamburgers";
+@import "0-tools/mmenu/jquery.mmenu.bootstrap.css";
 
 // Import Base
 @import "1-base/vars";
@@ -54,6 +55,7 @@ $icon-font-path: '0-tools/bootstrap/assets/fonts/bootstrap/';
 
 // PROMOTION DETAIL
 @import "3-layout/promotion-detail/promotion-detail-showcase";
+@import "3-layout/promotion-detail/promotion-detail-header";
 
 // SERVICE
 @import "3-layout/service/service-showcase";
@@ -112,6 +114,8 @@ $icon-font-path: '0-tools/bootstrap/assets/fonts/bootstrap/';
 @import "4-responsive/service-detail/service-detail";
 
 @import "4-responsive/collection-detail/collection-detail";
+
+@import "4-responsive/promotion-detail/promotion-detail";
 
 @import "4-responsive/post-nav";
 

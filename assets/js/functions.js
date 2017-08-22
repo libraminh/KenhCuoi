@@ -2,6 +2,9 @@ jQuery(document).ready(function( $ ) {
   activeSubMenu();
   activeCarousel();
   countDown();
+  searchBtn();
+
+  $('#service-detail-modal').appendTo("body")
 });
 
 $(window).scroll(function(){
@@ -9,6 +12,23 @@ $(window).scroll(function(){
 })
 
 // Function Area
+function searchBtn() {
+  $('.search-btn').on('click', function(){
+    $('.search-icon-nav').hide();
+    $('.search-btn-input').appendTo('.search-btn-input').show('slow');
+    $('.search-btn-input').focus();
+  })
+
+  $('html').click(function() {
+   $('.search-btn-input').hide();
+   $('.search-icon-nav').show();
+  });
+
+  $('.search-btn').click(function(event){
+       event.stopPropagation();
+  });
+}
+
 function activeSubMenu() {
   $("#menu").mmenu({
     "extensions": [
