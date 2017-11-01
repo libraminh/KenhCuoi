@@ -26,7 +26,10 @@
   }
 
   .account-manage-album-primary-nav {
+
     &-sub {
+      @include font('Roboto');
+
       li {
         padding: 5px 0;
         border: none;

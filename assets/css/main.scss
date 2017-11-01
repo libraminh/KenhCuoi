@@ -1,4 +1,7 @@
 // Import Tools
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&subset=vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&subset=vietnamese');
+@import "0-tools/kenhcuoi-icon/styles.css";
 $icon-font-path: '0-tools/bootstrap/assets/fonts/bootstrap/';
 @import "0-tools/bootstrap/assets/stylesheets/bootstrap";
 @import "0-tools/bootstrap-select/bootstrap-select";
@@ -120,3 +123,5 @@ $icon-font-path: '0-tools/bootstrap/assets/fonts/bootstrap/';
 @import "4-responsive/post-nav";
 
 @import "4-responsive/account/account";
+
+@import "4-responsive/showcase-global";

@@ -5,6 +5,7 @@
   margin-bottom: 50px;
 
   .breadcrumb-1 {
+    transform: translateY(-2px);
     margin: 0;
     padding: 0;
     background: $accent-color;
@@ -17,6 +18,7 @@
     }
 
     a {
+      font-size: 12px;
       color: #ffcad3;
     }
   }
@@ -55,6 +57,8 @@
   margin-top: 0 !important;
 
   a {
+    font-size: 12px;
+    line-height: 30px;
     color: $accent-color !important;
     @extend %font-weight;
   }
@@ -70,16 +74,17 @@
   margin: 0;
   padding: 0;
   margin-top: 0 !important;
+  @include font('Roboto');
 
   a {
     color: $accent-color ;
-    font-size: 22px;
+    font-size: 18px;
     @extend %font-weight;
   }
 
   li.active a {
     color: $text-color4;
-    font-size: 18px;
+    font-size: 14px;
   }
 
   li + li:before {

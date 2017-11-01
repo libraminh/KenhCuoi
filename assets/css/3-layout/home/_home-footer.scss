@@ -2,10 +2,19 @@
   color: $text-color4;
   background: $footer-bg;
   margin-top: 50px;
+  padding-top: 40px;
+  @include font('Roboto');
 
   h3 {
+    font-size: 20px;
     color: $text-color3;
     @extend %font-weight;
+    @include font('Montserrat');
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 24px;
   }
 
   .footer-nav {
@@ -59,11 +68,17 @@
     background: $copyright-bg;
     width: 100%;
     padding: 20px 0;
+    margin-top: 60px;
+    @include font('Montserrat');
 
     .row {
       width: 100%;
       display: flex;
       align-items: center;
+    }
+
+    .copycat {
+      font-size: 14px;
     }
 
     .copyright-nav {
@@ -72,9 +87,14 @@
       li {
         display: inline-table;
 
+        &:last-child a {
+          border-right: none;
+        }
       }
 
       a {
+        font-size: 12px;
+        line-height: 25px;
         color: $text-color4;
         padding-right: 6px;
         padding-left: 3px;

@@ -37,11 +37,30 @@ input {
   }
 }
 
+.home-showcase-date {
+  font-size: 12px;
+  line-height: 24px;
+  @include font('Roboto');
+}
+
+.divine-1 {
+  margin: 0 3px;
+}
+
+.divine-2 {
+  margin: 0 5px;
+}
+
 .open-header {
   .header-navbar {
     // overflow: hidden;
     border-bottom: 1px solid $border-color !important;
   }
+}
+
+.social-icon-2 {
+  font-size: 16px;
+  margin-right: 3px;
 }
 
 .mm-slideout {
@@ -142,6 +161,8 @@ input {
 // Box Title
 .box-title {
   h4 {
+    padding: 5px 0;
+    font-size: 20px;
     overflow: hidden;
     color: $accent-color;
 
@@ -168,6 +189,8 @@ input {
 
 .box-title-1 {
   h4 {
+    padding: 5px 0;
+    font-size: 20px;
     overflow: hidden;
     color: $accent-color;
 
@@ -189,6 +212,7 @@ input {
 
   h5 {
     width: 100%;
+    padding: 5px 0;
     margin: .7em auto;
     overflow: hidden;
     text-align: center;

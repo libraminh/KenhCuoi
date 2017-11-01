@@ -17,6 +17,8 @@
       color: $white-color;
       padding: 20px;
       margin-top: 10px;
+      font-size: 14px;
+      @include font('Roboto');
 
       &:focus {
         border: none !important;
@@ -46,7 +48,7 @@
     }
 
     h4 {
-      font-size: 16px;
+      font-size: 14px;
       color: $accent-color;
       line-height: 1.4;
     }

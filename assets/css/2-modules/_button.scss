@@ -7,6 +7,7 @@
   font-size: 12px;
   @extend  %font-weight;
   transition: all .1s ease-in-out;
+  @include font('Montserrat');
 
   &:hover {
     color: $white-color;
@@ -59,6 +60,8 @@
 
 // Button Tag
 .btn-tag {
+  font-size: 12px;
+  line-height: 24px;
   background: $tag-bg;
   color: $text-color6;
   padding: 10px;

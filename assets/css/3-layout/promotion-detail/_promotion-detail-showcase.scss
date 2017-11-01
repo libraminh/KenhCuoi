@@ -20,25 +20,77 @@
       span {
         color: $text-color4;
       }
+
+      ul {
+        @include hoverColor($accent-color);
+        @include font('Roboto');
+
+        li {
+          font-size: 14px;
+          line-height: 26px;
+        }
+      }
     }
   }
 
+  .detail-time {
+    margin-left: 15px;
+  }
+
+  .home-showcase-title h4 {
+    color: $text-color;
+    font-size: 20px;
+    line-height: 30px;
+    @include hoverColor($accent-color);
+  }
+
   .post-video-showcase-metadata {
+    font-size: 12px;
+    line-height: 24px;
     display: flex;
     justify-content: space-between;
+
+    .home-popular-date {
+      font-size: 12px;
+    }
 
     .text-accent {
       display: inline;
     }
   }
 
+  .line-divine {
+    margin: 0 7px;
+  }
+
   .post-video-showcase-morelink {
     margin: 15px 0;
+
+    &-nav {
+      a {
+        font-weight: 500;
+        color: $text-color3;
+      }
+    }
   }
 
   .post-video-showcase-content {
+    @include font('Roboto');
+
     p {
+      font-size: 14px;
+      line-height: 24px;
       margin: 20px 0;
+    }
+  }
+
+  .post-video-showcase-tag-social {
+    margin-right: 5px;
+  }
+
+  .post-video-showcase-relate {
+    img {
+      margin-bottom: 5px;
     }
   }
 }

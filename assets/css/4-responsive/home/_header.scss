@@ -9,6 +9,12 @@
       }
     }
 
+    &-left-1 {
+      li {
+        margin-right: 0px !important;
+      }
+    }
+
     &-left-sub {
 
       & > a {
@@ -61,6 +67,18 @@
       li:hover .header-navbar-left-sub {
         animation: menu 0.8s ease-in-out forwards;
         pointer-events: all;
+      }
+    }
+
+    &-left-1 {
+      li {
+        margin-right: 10px !important;
+      }
+
+      .header-navbar-left-sub {
+        li {
+          margin-right: 0 !important;
+        }
       }
     }
 
@@ -122,13 +140,19 @@
         line-height: normal;
         transition: all .2s ease-in-out;
         @include hoverColor($accent-color);
-
-        &:hover {
-          padding-left: 10px ;
-        }
       }
     }
 
+  }
+}
+
+@media (max-width: 1200px) {
+  .header-navbar {
+    &-left-1 {
+      li {
+        margin-right: 0px !important;
+      }
+    }
   }
 }
 

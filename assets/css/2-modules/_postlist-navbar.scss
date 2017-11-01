@@ -13,10 +13,16 @@
         a {
           color: $accent-color;
         }
-        
+
         .post-nav path {
           fill: $accent-color;
         }
+      }
+
+      i {
+        font-size: 25px;
+        margin-right: 10px;
+        transform: translateY(3px);
       }
     }
 
@@ -34,5 +40,11 @@
         fill: $text-color3;
       }
     }
+  }
+}
+
+.postlist-nav-1 {
+  .postlist-nav-navbar li {
+    padding: 3px 0;
   }
 }
