@@ -8207,7 +8207,7 @@ img.nhancuoi svg #nhancuoi {
       text-align: center;
       color: #e34963;
       float: left;
-      margin: 0 15px; }
+      margin: 0 10px; }
     .header-banner-wrap .break {
       display: block; }
     .header-banner-wrap .btn-accent {
@@ -9091,6 +9091,8 @@ img.nhancuoi svg #nhancuoi {
       width: 30px;
       height: 30px;
       font-size: 14px; }
+      .service-detail-primary-content-info .media-body .footer-social a:hover {
+        background: #93b0b4; }
     .service-detail-primary-content-info .media-body .footer-social i {
       margin: 0; }
   .service-detail-primary-content-info .media-left {
@@ -9501,10 +9503,8 @@ img.nhancuoi svg #nhancuoi {
   .header-navbar-left {
     height: 60px; }
     .header-navbar-left a {
-      padding: 9px !important;
+      padding: 9px 8px !important;
       line-height: 40px !important; }
-  .header-navbar-left-1 li {
-    margin-right: 0px !important; }
   .header-navbar-left-sub > a {
     display: none !important; }
   .header-navbar-left-sub a {
@@ -9535,8 +9535,6 @@ img.nhancuoi svg #nhancuoi {
       -webkit-animation: menu 0.8s ease-in-out forwards;
       animation: menu 0.8s ease-in-out forwards;
       pointer-events: all; }
-  .header-navbar-left-1 li {
-    margin-right: 10px !important; }
   .header-navbar-left-1 .header-navbar-left-sub li {
     margin-right: 0 !important; }
   .header-navbar-left-sub {

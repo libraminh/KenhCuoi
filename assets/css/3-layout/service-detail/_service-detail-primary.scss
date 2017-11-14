@@ -66,6 +66,10 @@
             width: 30px;
             height: 30px;
             font-size: 14px;
+
+            &:hover {
+              background: darken(#b1c6c9, 10%);
+            }
           }
 
           i {

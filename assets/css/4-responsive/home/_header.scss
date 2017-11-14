@@ -4,16 +4,16 @@
       height: 60px;
 
       a {
-        padding: 9px !important;
+        padding: 9px 8px !important;
         line-height: 40px !important;
       }
     }
 
-    &-left-1 {
-      li {
-        margin-right: 0px !important;
-      }
-    }
+    // &-left-1 {
+    //   li {
+    //     margin-right: 0px !important;
+    //   }
+    // }
 
     &-left-sub {
 
@@ -72,7 +72,7 @@
 
     &-left-1 {
       li {
-        margin-right: 10px !important;
+        // margin-right: 10px !important;
       }
 
       .header-navbar-left-sub {
